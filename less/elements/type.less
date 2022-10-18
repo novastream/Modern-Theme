@@ -1,0 +1,245 @@
+.margin {
+    margin: @table-cell-padding 0;
+}
+
+.margin-top-sm {
+    margin-top: calc(@table-cell-padding / 2);
+}
+
+.margin-top {
+    margin-top: @table-cell-padding;
+}
+
+.margin-top-2x {
+    margin-top: @table-cell-padding * 2;
+}
+
+.margin-bottom-sm {
+    margin-bottom: calc(@table-cell-padding / 2);
+}
+
+.margin-bottom {
+    margin-bottom: @table-cell-padding;
+}
+
+.margin-bottom-2x {
+    margin-bottom: @table-cell-padding * 2;
+}
+
+.margin-bottom-3x {
+    margin-bottom: @table-cell-padding * 3;
+}
+
+.margin-bottom-4x {
+    margin-bottom: @table-cell-padding * 4;
+}
+
+.margin-bottom.margin {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 22px;
+     margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: @gray-soft;
+}
+
+h6 {
+    font-weight: 600;
+    color: @gray-soft;
+    font-size: 14px;
+}
+
+code {
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.text-soft {
+    color: @gray-soft;
+}
+
+.text-smaller {
+    font-size: @font-size-smaller;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-large {
+    font-size: 1.4em;
+}
+
+.text-2em {
+    font-size: 2em;
+}
+
+.text-3em {
+    font-size: 3em;
+}
+
+.text-4em {
+    font-size: 4em;
+}
+
+.text-5em {
+    font-size: 5em;
+}
+
+.text-6em {
+    font-size: 6em;
+}
+
+pre > code {
+    font-style: normal;
+}
+
+hr {
+    border-top: 1px solid @panel-default-border;
+}
+
+blockquote {
+    font-size: @font-size-base;
+    border-left: 3px solid var(--blockquote-border-color);
+}
+
+.well > p:last-child {
+    margin-bottom: 0;
+}
+
+.well {
+    padding: @well-padding;
+}
+
+.badge {
+    font-weight: 600;
+}
+
+.badge-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    text-align: center;
+    display: table-cell;
+    font-size: 5px;
+    line-height: 8px;
+    background-color: @main-gray;
+}
+
+.badge-circle.badge-circle-danger {
+    background-color: @brand-danger;
+}
+
+.badge-circle.badge-circle-warning {
+    background-color: @brand-warning;
+}
+
+.label {
+    padding: .09em .5em .2em;
+    position: relative;
+    top: -1px;
+    font-weight: 600;
+}
+
+.label-md {
+    font-weight: normal;
+    font-size: 100%;
+    padding: @label-padding-medium;
+    top: 0;
+    line-height: 1.8;
+}
+
+.label-sm {
+    font-weight: normal;
+    font-size: 75%;
+    padding: @label-padding-small;
+}
+
+.small .label-md,
+.label-lg.small {
+    font-size: 75%;
+    padding: @label-padding-small;
+    top: -1px;
+}
+
+a[role="button"],
+a[href="javascript:"] {
+    &:not(.selectable) {
+        user-select: none;
+    }
+}
+
+a.text-muted {
+    &:hover,
+    &:focus {
+        color: var(--text-muted-color);
+    }
+
+    &:hover,
+    &[aria-describedby]{
+        > .fas,
+        > .far {
+            color: var(--gray-soft);
+        }
+    }
+}
+
+.text-primary {
+    .text-emphasis-variant-espo(var(--state-primary-text), var(--brand-primary-10));
+}
+.text-success {
+    .text-emphasis-variant-espo(var(--state-success-text), var(--state-success-text-10));
+}
+.text-info {
+    .text-emphasis-variant-espo(var(--state-info-text), var(--state-info-text-10));
+}
+.text-warning {
+    .text-emphasis-variant-espo(var(--state-warning-text); var(--state-warning-text-10));
+}
+.text-danger {
+    .text-emphasis-variant-espo(var(--state-danger-text); var(--state-danger-text-10));
+}
+
+.bg-primary {
+    color: var(--text-white-color);
+    .bg-variant-espo(var(--brand-primary), var(--brand-primary-5));
+}
+.bg-success {
+    .bg-variant-espo(var(--state-success-bg), var(--state-success-bg-5));
+}
+.bg-info {
+    .bg-variant-espo(var(--state-info-bg), var(--state-info-bg-5));
+}
+.bg-warning {
+    .bg-variant-espo(var(--state-warning-bg); var(--state-warning-bg-5));
+}
+.bg-danger {
+    .bg-variant-espo(var(--state-danger-bg); var(--state-danger-bg-5));
+}

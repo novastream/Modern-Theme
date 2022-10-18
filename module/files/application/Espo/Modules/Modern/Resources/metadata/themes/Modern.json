@@ -1,0 +1,19 @@
+{
+    "stylesheet": "client/modules/ModernTheme/css/espo/modern.css",
+    "stylesheetIframe": "client/modules/ModernTheme/css/espo/modern-iframe.css",
+    "navbarIsVertical": false,
+    "recordTopButtonsStickTop": 61,
+    "recordTopButtonsBlockHeight": 21,
+    "dashboardCellHeight": 155,
+    "dashboardCellMargin": 19,
+    "modalFooterAtTheTop": false,
+    "modalFullHeight": false,
+    "fontSize": 14,
+    "navbarHeight": 55,
+    "textColor": "#33475b",
+    "chartGridColor": "#ddd",
+    "chartTickColor": "#e8eced",
+    "chartSuccessColor": "#85b75f",
+    "chartColorList": ["#6FA8D6", "#EDC555", "#DE6666", "#8A7CC2", "#c1834d", "#4E6CAD", "#ED8F42", "#d69cc7", "#bfbfbf"],
+    "chartColorAlternativeList": ["#6FA8D6", "#EDC555", "#DE6666", "#8A7CC2", "#c1834d"]
+}

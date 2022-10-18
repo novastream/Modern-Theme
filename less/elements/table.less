@@ -1,0 +1,188 @@
+table.table,
+.list-container > .list,
+.calendar-container > .calendar,
+.calendar-container > .timeline {
+    background-color: var(--table-bg);
+}
+
+.table {
+    margin-bottom: 10px;
+
+    > thead,
+    > tbody {
+        > tr {
+            > th:first-child,
+            > td:first-child {
+                padding-left: @padding-base-horizontal;
+
+                @media screen and (max-width: (@screen-sm-min - 1px)) {
+                    padding-left: @table-cell-padding;
+                }
+            }
+
+            > th:last-child,
+            > td:last-child {
+                padding-right: @padding-base-horizontal;
+
+                @media screen and (max-width: (@screen-sm-min - 1px)) {
+                    padding-right: @table-cell-padding;
+                }
+            }
+        }
+    }
+}
+
+table.table > thead th > a {
+    color: var(--text-muted-color);
+}
+
+table.table > thead th {
+    color: var(--text-muted-color);
+}
+
+th {
+    font-weight: 600;
+}
+
+.table thead > tr > th {
+    border-bottom: 1px solid @table-new-border-color;
+    font-weight: var(--table-th-font-weight);
+    font-size: var(--table-th-font-size);
+    background-color: var(--table-th-bg-color);
+    height: var(--table-th-height);
+    padding: var(--table-th-padding);
+    text-align: var(--table-th-text-align);
+    vertical-align: var(--table-th-vertical-align);
+}
+
+.table thead > tr > th:not(.checkbox-dropdown),
+.table thead > tr > th:not(.dropdown-menu) {
+    text-transform: var(--table-th-uppercase);
+}
+
+.table tr > th {
+    font-weight: 400;
+}
+
+.table tr.accented {
+    background-color: @table-bg-accent;
+}
+
+.table td.accented {
+    background-color: @table-bg-accent;
+}
+
+
+table.table-bordered-inside {
+    border-collapse: collapse;
+    border-style: hidden;
+
+    td, th {
+        border: 1px solid var(--default-border-color);
+    }
+}
+
+table.table > tbody td > .list-row-buttons button {
+    position: relative;
+    margin-top: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.table.table-no-overflow {
+    > tbody > tr > td,
+    > tbody > tr > th,
+    > thead > tr > th {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+table.table-fixed {
+    table-layout: fixed;
+}
+
+.table.less-padding > thead > tr > th,
+.table.less-padding > tbody >tr > th,
+.table.less-padding > tfoot >tr > th,
+.table.less-padding > thead >tr > td,
+.table.less-padding > tbody >tr > td,
+.table.less-padding > tfoot >tr > td {
+    padding: @table-cell-padding @table-cell-less-padding @table-cell-padding @table-cell-less-padding;
+}
+
+table.no-margin {
+    margin-bottom: 0;
+}
+
+table.table-panel {
+    border-collapse: separate;
+    border-radius: var(--panel-border-radius);
+    border: var(--panel-border-width) solid var(--panel-default-border);
+
+    thead > tr > th {
+        border-bottom: 0;
+    }
+
+    &.table-striped {
+        tbody > tr:last-child {
+            > td:first-child {
+                border-bottom-left-radius: var(--panel-border-radius);
+            }
+
+            > td:last-child {
+                border-bottom-right-radius: var(--panel-border-radius);
+            }
+        }
+    }
+}
+
+.table.table-striped {
+    background-color: transparent;
+}
+
+table td.cell-nowrap,
+table th.cell-nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+table.table > thead th {
+    background-color: var(--table-th-bg-color);
+    cursor: pointer;
+    border-color: var(--table-new-border-color);
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+table.table tr th:hover,
+table.table tr th:active {
+    background-color: var(--table-th-hover-bg-color);
+}
+
+table.table tr th a:hover {
+    text-decoration: none;
+}
+
+table.table tr:hover {
+    background-color: var(--table-active-bg);
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: var(--table-active-bg);
+}

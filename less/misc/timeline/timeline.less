@@ -1,0 +1,109 @@
+#main > .calendar-container .timeline {
+    border: 1px solid var(--calendar-border);
+}
+
+.calendar-container .timeline {
+    border-bottom: 1px solid var(--calendar-border);
+}
+
+.vis-content .vis-item.clickable .vis-item-content {
+    cursor: pointer !important;
+}
+.vis-item .vis-item-content:not(.clickable) {
+    cursor: default !important;
+}
+
+.vis-content .vis-labelset .vis-label .vis-inner {
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: @table-cell-padding;
+}
+
+.vis-foreground .vis-group,
+.vis-labelset .vis-label {
+    border-bottom-color: var(--calendar-border) !important;
+}
+
+.vis-panel.vis-center,
+.vis-panel.vis-left,
+.vis-panel.vis-right,
+.vis-panel.vis-top,
+.vis-panel.vis-bottom,
+.vis-time-axis .vis-grid.vis-major {
+    border-color: var(--calendar-border) !important;
+}
+
+.vis-time-axis {
+    color: var(--gray);
+}
+
+.vis-item .vis-item-content {
+    color: var(--white-color) !important;
+}
+
+.vis-item.vis-range .vis-item-content,
+.vis-item.vis-box .vis-item-content {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.vis-timeline {
+    border-width: 0 !important;
+}
+
+.vis-item .vis-item-content {
+    font-size: 0.85em !important;
+}
+
+.vis-item.event-canceled .vis-item-content {
+    text-decoration: line-through !important;
+}
+
+.vis-item.vis-range, .vis-item.vis-box {
+    border-radius: var(--border-radius) !important;
+}
+
+.vis-current-time {
+    background-color: var(--brand-danger-lighten-20) !important;
+}
+
+.calendar-container .timeline .vis-item,
+.calendar-container .timeline .vis-item.vis-selected {
+    border-color: var(--brand-primary-lighten-30);
+    background-color: var(--brand-primary-lighten-50);
+}
+
+.calendar-container .timeline .vis-tooltip {
+    display: none;
+}
+
+.vis-item.vis-background.busy {
+    background-color: var(--calendar-busy-bg);
+}
+
+.vis-item.vis-background.event-range {
+    border-color: var(--brand-primary-lighten-10);
+    border-left-width: 4px ;
+    border-right-width: 4px;
+    border-left-style: solid;
+    border-right-style: solid;
+    background: none;
+}
+
+.timeline > .vis-timeline {
+    border-bottom-right-radius: var(--panel-border-radius);
+}
+
+@media screen and (max-width: (@screen-sm-min - 1px)) {
+    .vis-timeline {
+        font-size: 93%;
+    }
+}
+
+.vis-time-axis .vis-grid.vis-minor {
+    border-color: var(--calendar-border) !important;
+}

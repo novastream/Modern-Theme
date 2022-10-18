@@ -1,0 +1,89 @@
+
+body, table {
+    font-size: @font-size-base;
+    font-family: @font-family-base;
+    color: @text-color;
+}
+
+body {
+    > p:last-child,
+    > ul:last-child,
+    > ol:last-child,
+    > pre:last-child,
+    > blockquote:last-child {
+        margin-bottom: 0;
+    }
+
+    background-color: var(--panel-bg);
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: @link-color;
+    text-decoration: none;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: #e8eced;
+    border-spacing: 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-bordered {
+    border: 1px solid @default-border-color;
+}
+
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
+    border: 1px solid @default-border-color;
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+    padding: @table-cell-padding;
+    line-height: @line-height-base;
+    vertical-align: top;
+    border-top: 1px solid @default-border-color;
+}
+
+pre {
+    display: block;
+    padding: ((@line-height-computed - 1) / 2);
+    margin: 0 0 (@line-height-computed / 2);
+    font-size: (@font-size-base - 1);
+    line-height: @line-height-base;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: var(--code-color);
+    background-color: var(--code-bg);
+    border: 1px solid var(--code-border-color);
+
+    border-radius: @border-radius-base;
+
+    code {
+        padding: 0;
+        font-size: inherit;
+        color: inherit;
+        white-space: pre-wrap;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}

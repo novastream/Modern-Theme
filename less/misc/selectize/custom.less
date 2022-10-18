@@ -1,0 +1,44 @@
+.filter > .form-group .field {
+    .selectize-control {
+        .selectize-input {
+            font-size: @font-size-small;
+            padding: 4px 5px 0;
+        }
+    }
+}
+
+.selectize-input {
+    height: var(--form-control-height);
+}
+
+.selectize-control.multi .selectize-input > div {
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin: 0 3px 3px 0;
+    padding: 1px 3px;
+    background: #eaf0f6;
+    color: #506e91;
+    border: 0 solid transparent;
+}
+  
+.selectize-control.multi .selectize-input>div.active {
+    background: #eaf0f6;
+    color: #506e91;
+    border: 0 solid transparent;
+}
+
+.selectize-control.multi .selectize-input.disabled > div,
+.selectize-control.multi .selectize-input.disabled > div.active {
+    color: #506e91;
+    background: #eaf0f6;
+    border: 0 solid rgba(77, 77, 77, 0);
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.selectize-control.multi .selectize-input.has-items {
+    padding-top: 8px;
+}

@@ -1,0 +1,283 @@
+@main-gray-value: #cbd6e2;
+
+@white-color-value: #FEFEFE;
+
+@gray-base-value: #000;
+@gray-dark-value: #33475b;
+@gray-value: lighten(@gray-base, 33.5%);
+//@gray-light-value: lighten(@gray-base, 46.7%);
+@gray-lighter-value: lighten(@gray-base-value, 93.5%);
+
+@gray-soft-value: #33475b;
+@gray-light-value: rgb(51, 71, 91);
+
+@body-bg-value: rgb(245, 248, 250);
+
+@brand-primary-value: #0091ae;
+@brand-danger-value: #ff7a59;
+@brand-info-value: #a595c9;
+@brand-success-value: #0091ae;
+@brand-warning-value: #eda530;
+
+@brand-primary-text-value: #FFF;
+
+@state-primary-text-value: #5b9aca;
+
+@state-success-bg-value: lighten(spin(@brand-success-value, 5), 30%);
+@state-success-text-value: darken(spin(@brand-success-value, 7), 17%);
+
+@state-info-bg-value: #e5ddf8;
+@state-info-text-value: #83779c;
+
+@state-warning-bg-value: #fcf8e3;
+@state-warning-text-value: @brand-primary-value;
+
+@state-danger-text-value: #ad4846;
+@state-danger-bg-value: #f2dede;
+
+@default-box-shadow-value: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
+
+@top-bar-box-shadow-value: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
+
+@navbar-bg-value: @body-bg-value;
+@navbar-link-color-value: @gray-light-value;
+@navbar-link-hover-color-value: @gray-value;
+@navbar-link-hover-bg-value: @body-bg-value;
+@navbar-box-shadow-value: none;
+
+@navbar-inverse-color-value: @gray-light-value;
+@navbar-inverse-bg-value: rgb(46, 63, 80);
+@navbar-inverse-border-value: transparent;
+@navbar-inverse-link-color-value: #ffffff;
+@navbar-inverse-link-hover-color-value: #fff;
+@navbar-inverse-link-hover-bg-value: transparent;
+@navbar-inverse-link-disabled-color-value: #444;
+@navbar-inverse-link-disabled-bg-value: transparent;
+@navbar-inverse-link-active-bg-value: darken(@navbar-inverse-bg-value, 10%);
+
+@input-border-value: #cbd6e2;
+@input-border-focus-value: #66afe9;
+@input-color-value: #33475b;
+@input-bg-value: #f5f8fa;
+@input-bg-disabled-value: #eaf0f6;
+@input-color-disabled-value: #cbd6e2;
+@input-box-shadow-value: none;
+@input-border-width-value: 1px;
+
+@modal-backdrop-bg-value: fade(#DBDBDB, 50%);
+@modal-backdrop-filter-value: blur(1px);
+@modal-header-border-color-value: trasparent;
+@modal-header-bg-value: rgb(234, 240, 246);
+@modal-footer-bg-value: @body-bg-value;
+@modal-content-bg-value: rgb(255, 255, 255);
+@modal-box-shadow-value: 0 5px 15px rgb(0 0 0 / 50%);
+
+@text-color-value: @gray-dark-value;
+@text-white-color-value: @white-color-value;
+@text-muted-color-value: @gray-light-value;
+@text-gray-color-value: #33475b;
+
+@link-color-value: @brand-primary-value;
+@link-hover-color-value: #385d7c;
+
+@panel-bg-value: #ffffff;
+// Should be in px units to work in CSS math functions.
+@panel-border-width-value: 0px;
+@panel-heading-height-value: 30px;
+@panel-heading-font-size-value: 14px;
+
+@vertical-gap-value: 16px;
+
+@table-bg-value: @panel-bg-value;
+@table-bg-accent-value: rgb(245, 248, 250);;
+
+@default-border-color-value: @main-gray-value;
+@default-heading-bg-color-value: @main-gray-value;
+
+@code-bg-value: #f9f9f9;
+@code-border-color-value: @default-border-color-value;
+@code-color-value: @gray-dark-value;
+
+@blockquote-border-color-value: @gray-lighter-value;
+
+@panel-default-text-value: rgb(51, 71, 91);
+@panel-default-border-value: @default-border-color-value;
+@panel-default-bg-value: @panel-bg-value;
+
+@panel-primary-bg-value: darken(@brand-primary-value, 12%);
+@panel-primary-border-value: @panel-primary-bg-value;
+@panel-primary-text-value: @white-color-value;
+
+@panel-danger-bg-value: @state-danger-bg-value;
+@panel-danger-border-value: @panel-danger-bg-value;
+@panel-danger-text-value: @state-danger-text-value;
+
+//@panel-warning-bg-value: #efda97;
+@panel-warning-bg-value: #f9eabb;
+@panel-warning-border-value: @panel-warning-bg-value;
+@panel-warning-text-value: @state-warning-text-value;
+
+@panel-success-bg-value: @state-success-bg-value;
+@panel-success-border-value: @panel-success-bg-value;
+@panel-success-text-value: @state-success-text-value;
+
+@panel-info-bg-value: @state-info-bg-value;
+@panel-info-border-value: @panel-info-bg-value;
+@panel-info-text-value: @state-info-text-value;
+
+@btn-default-bg-value: #eaf0f6;
+@btn-default-border-value: #cbd6e2;
+@btn-default-color-value: #506e91;
+@btn-default-hover-bg-value: #f5f8fa;
+@btn-default-hover-border-value: #cbd6e2;
+@btn-default-active-bg-value: #f5f8fa;
+@btn-default-active-border-value: #cbd6e2;
+
+@btn-primary-bg-value: #ff7a59;
+@btn-primary-border-value: #ff7a59;
+@btn-primary-color-value: #fff;
+@btn-primary-hover-bg-value: #ff8f73;
+@btn-primary-active-bg-value: #ff8f73;
+@btn-primary-hover-border-value: #ff8f73;
+@btn-primary-active-border-value: #ff8f73;
+
+@btn-success-bg-value: #425b76;
+@btn-success-border-value: #425b76;
+@btn-success-color-value: #fff;
+@btn-success-hover-bg-value: #516f90;;
+@btn-success-active-bg-value: #516f90;;
+@btn-success-hover-border-value: #516f90;;
+@btn-success-active-border-value: #516f90;;
+
+@btn-danger-bg-value: @brand-danger-value;
+@btn-danger-border-value: @btn-danger-bg-value;
+@btn-danger-color-value: #fff;
+@btn-danger-hover-bg-value: #ff8f73;
+@btn-danger-active-bg-value: #ff8f73;
+@btn-danger-hover-border-value: #ff8f73;
+@btn-danger-active-border-value: #ff8f73;
+
+@btn-warning-bg-value: @brand-warning-value;
+@btn-warning-border-value: @btn-warning-bg-value;
+@btn-warning-color-value: #fff;
+@btn-warning-hover-bg-value: darken(@btn-warning-bg-value, 10%);
+@btn-warning-active-bg-value: darken(@btn-warning-bg-value, 17%);
+@btn-warning-hover-border-value: @btn-warning-hover-bg-value;
+@btn-warning-active-border-value: darken(@btn-warning-bg-value, 20%);
+
+@btn-info-bg-value: @brand-info-value;
+@btn-info-border-value: @btn-info-bg-value;
+@btn-info-color-value: #fff;
+@btn-info-hover-bg-value: darken(@btn-info-bg-value, 10%);
+@btn-info-active-bg-value: darken(@btn-info-bg-value, 17%);
+@btn-info-hover-border-value: @btn-info-hover-bg-value;
+@btn-info-active-border-value: darken(@btn-info-bg-value, 20%);
+
+@btn-text-color-value: #33475b;
+@btn-active-box-shadow-value: inset 0 3px 5px rgba(0, 0, 0, .125);
+
+@site-footer-bg-value: transparent;
+@site-footer-color-value: @brand-primary-value;
+
+@popover-bg-value: @white-color-value;
+
+@dropdown-bg-value: @white-color-value;
+@dropdown-link-color-value: @gray-dark-value;
+@dropdown-link-hover-color-value: darken(@gray-dark-value, 5%);
+@dropdown-link-hover-bg-value: #e5f5f8;
+@dropdown-border-value: @default-border-color-value;
+@dropdown-border-width-value: 1px;
+@dropdown-divider-bg-value: #e5e5e5;
+@dropdown-box-shadow-value: 0 1px 24px 0 rgb(0 0 0 / 8%);
+
+@login-panel-heading-bg-value: @navbar-inverse-bg-value;
+
+@gray-lighter-orange-mix-value: mix(orange, @gray-lighter-value, 50%);
+
+@calendar-today-bg-value: rgb(229, 245, 248);
+@calendar-border-value: rgb(223, 227, 235);
+@calendar-busy-bg-value: @gray-lighter-value;
+
+@select-item-text-color-value: @text-color-value;
+@select-item-bg-value: #efefef;
+@select-item-active-text-color-value: @white-color-value;
+@select-item-active-bg-value: @brand-primary-value;
+@select-item-border-value: @gray-light-value;
+
+@label-color-value: #fff;
+@label-default-bg-value: @gray-light-value;
+
+@well-bg-value: @panel-bg-value;
+@well-border-value: @default-border-color-value;
+
+@scroll-bg-value: @gray-lighter-value;
+@scroll-thumb-bg-value: #c7c7c7;
+@scroll-border-width-value: 0;
+@scroll-width-value: 11px;
+
+@collapsed-modal-bg-value: @gray-soft-value;
+@collapsed-modal-text-color-value: @text-white-color-value;
+
+@btn-xs-wide-width-value: 65px;
+@btn-s-wide-width-value: 80px;
+@btn-wide-width-value: 100px;
+@btn-x-wide-width-value: 150px;
+@btn-xx-wide-width-value: 200px;
+
+@border-radius-value: 3px;
+@panel-border-radius-value: 3px;
+@dropdown-border-radius-value: 3px;
+
+// added by Novastream AB
+@white-bg-value: rgb(255, 255, 255);
+@reset-shadows-value: none;
+@reset-border-radius-value: 0;
+@panel-default-heading-bg-value: rgb(234, 240, 246);
+@panel-box-shadow-value: rgb(45 62 80 / 12%) 0px 1px 5px 0px;
+@default-body-font-weight-value: 300;
+@modal-footer-border-value: 1px solid rgb(223, 227, 235);
+@modal-header-border-value: 1px solid rgb(223, 227, 235);
+@form-control-height-value: 40px;
+@form-control-padding-value: 9px 10px;
+@form-control-font-size-value: 16px;
+@form-control-font-weight-value: 300;
+@form-control-line-height-value: 22px;
+@form-control-color-value: #33475b;
+@form-control-bg-value: #f5f8fa;
+@form-control-bg-image-value: none;
+@form-control-transition-value: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+@form-control-focus-border-color-value: rgba(0, 208, 228, .5);
+@form-control-focus-outline-value: 0;
+@form-control-focus-shadow-value: 0 0 4px 1px rgba(0, 208, 228, .3), 0 0 0 1px #00d0e4;
+@select-font-size-value: 14px;
+@list-group-hover-bg-value: rgb(252, 252, 252);
+@caret-color-value: rgb(203, 214, 226);
+@caret-color-hover-value: rgb(124, 152, 182);
+@input-small-font-size-value: 12.5px;
+@input-small-radius-value: 3px;
+@input-small-padding-value: 6px 7px;
+@table-new-border-color-value: rgb(223, 227, 235);
+@table-th-font-weight-value: 400;
+@table-th-font-size-value: 12px;
+@table-th-bg-color-value: rgb(245, 248, 250);
+@table-th-hover-bg-color-value: rgb(229, 245, 248);
+@table-th-height-value: 44px;
+@table-th-padding-value: 8px 24px 4px;
+@table-th-text-align-value: left;
+@table-th-vertical-align-value: middle;
+@table-th-uppercase-value: uppercase;
+@table-td-height-value: 40px;
+@table-td-padding-value: 10px 24px 10px 24px;
+@table-active-bg-value: rgb(245, 248, 250);
+@table-active-border-color-value: rgb(223, 227, 235);
+@navbar-inverse-hover-bg-value: #253342;
+@navbar-inverse-caret-transition-value: all ease-in-out 0.15s;
+@navbar-inverse-caret-hover-color-value: #ff7a59;
+@input-light-bg-value: rgb(255, 255, 255);
+@field-info-color-value: rgb(124, 152, 182);
+@field-info-hover-color-value: rgb(124, 152, 182);
+@admin-layout-list-bg-value: rgb(248, 249, 251);
+@admin-layout-list-color-value: rgb(55, 72, 89);
+@admin-layout-list-radius-value: 3px;
+@admin-layout-list-border-value: 1px solid rgb(196, 208, 221);
+@admin-layout-list-row-bg-value: rgb(245, 248, 250);
