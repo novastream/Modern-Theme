@@ -1,11 +1,15 @@
 # Modern Theme
-Modern theme for EspoCRM 7.x (ONLY TOP NAV SUPPORTED)
+Modern theme for EspoCRM 7.x (Both side and top menu supported)
 
 This theme replaces the Hub Inspired Theme
 
 # Whats changed?
 - Only css is changed, no templates no javascript
 - LESS files included, nothing in Bootstrap is changed
+
+# Good to know
+- This theme is under active development
+- Its free to fork if you want your own personal touch
 
 # Installation
 - Download archive as a zip file
@@ -28,7 +32,7 @@ This theme replaces the Hub Inspired Theme
 - Do installation steps above
 
 # Before reporting a issue
-- Make sure you've cleared Espos cache by running: php clear_cache.php
+- Make sure you've cleared Espos cache by running: php clear_cache.php or by clicking clear cache within the administration area
 - Logout and login again
 - Press CTRL + F5 to reload browser cache
 
