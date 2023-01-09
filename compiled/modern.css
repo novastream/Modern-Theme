@@ -14376,7 +14376,7 @@ body[data-navbar="side"] .list-kanban .kanban-head-container.sticked {
   margin-top: 45px;
 }
 body[data-navbar="side"] .alert {
-  min-height: 45px;
+  min-height: var(--side-alert-height-value);
 }
 body[data-navbar="side"] #navbar .navbar-header > a {
   color: var(--navbar-inverse-link-color);
