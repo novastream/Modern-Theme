@@ -202,6 +202,7 @@ body:not([data-navbar="side"]) {
     @media screen and (max-width: (@screen-sm-min - 1px)) {
         #navbar .navbar {
             position: static;
+            min-height: var(--top-navbar-mobile-height);;
 
             ul.nav > li.global-search-container {
                 display: block;
@@ -231,7 +232,28 @@ body:not([data-navbar="side"]) {
             }
 
             .global-search-button {
-                height: 38px;
+                height: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .navbar-toggle {
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
+
+            .navbar-nav {
+                .notifications-button {
+                    padding-top: 17px;
+                    padding-bottom: 17px;
+                    height: 55px;
+                }
+
+                > li > a {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    height: 39px;
+                }
             }
         }
     }
