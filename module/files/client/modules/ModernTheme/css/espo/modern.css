@@ -19160,6 +19160,9 @@ input.form-control[data-name="quick-search"] {
 .input-group-btn {
   vertical-align: bottom;
 }
+.input-group .form-control {
+  z-index: inherit;
+}
 .admin-content iframe {
   box-shadow: var(--reset-shadows);
   background-color: var(--body-bg);
@@ -19244,9 +19247,6 @@ input.form-control[data-name="quick-search"] {
 .selectize-dropdown .optgroup-header {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-.form-control.selectize-control.single {
-  z-index: 3;
 }
 input[type="radio"],
 input[type="checkbox"] {
