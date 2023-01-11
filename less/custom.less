@@ -1144,7 +1144,7 @@ input.global-search-input {
     }
 }
 
-#main > div > .folders-container + .list-container {
+#main > div > .left-container + .list-container {
     > .no-data {
         margin-top: 15px;
     }
@@ -1212,9 +1212,11 @@ input.global-search-input {
 
 .list > table th span.caret:not(th[data-name="r-checkbox"] span.caret) {
     border-top-color: var(--caret-color);
+    margin-left: -1px;
 }
 .list > table th span.caret-up:not(th[data-name="r-checkbox"] span.caret) {
     border-bottom-color: var(--caret-color);
+    margin-left: -1px;
 }
 
 .filter a.remove-filter {
@@ -1317,7 +1319,7 @@ section {
 
     .modal-body .categories-container + .list-container,
     .list-categories-column + .list-main-column .list-container,
-    .folders-container + .list-container {
+    .left-container + .list-container {
         .list {
             margin-right: -@container-padding;
             border-top-left-radius: var(--panel-border-radius);
@@ -1357,8 +1359,8 @@ section {
 
     .list-main-column:first-child > .nested-categories-container:not(.hidden) + .list-container {
         .list {
-            margin-right: -@container-padding;
-            margin-left: -@container-padding;
+            margin-right: @list-container-margins;
+            margin-left: @list-container-margins;
 
             > table td:first-child,
             > table th:first-child {
@@ -2103,13 +2105,13 @@ textarea.auto-height {
     }
 }
 
-.modal-title-text span.fas.color-icon {
+.modal-title-text span.color-icon {
     margin-right: 2px;
 }
 
 .header-breadcrumbs {
-    .fas.color-icon {
-        font-size: 44%;
+    .color-icon {
+        font-size: 50%;
         left: 0;
         margin-right: 2px;
         top: -4px;
@@ -2124,7 +2126,7 @@ textarea.auto-height {
 }
 
 
-span.fas.color-icon {
+span.color-icon {
     font-size: 50%;
     top: -2px;
     left: 1px;
@@ -2133,7 +2135,7 @@ span.fas.color-icon {
     position: relative;
 }
 
-td > span.fas.color-icon {
+td > span.color-icon {
     left: 0;
     margin-right: 0;
 }
@@ -2558,9 +2560,10 @@ table.table td.cell .html-container {
 
 .list-group-side > li {
     border: 0;
-    padding: 5px 0 5px (@container-padding - 3px);
-    margin-left: -(@container-padding);
+    padding: 5px 4px 5px (@container-padding - 3px);
     border-left: 3px solid transparent;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 }
 
 .list-group-side > li.selected {
@@ -2600,6 +2603,31 @@ table.table td.cell .html-container {
 .email-address-create-dropdown + .email-address-line {
     display: block;
     width: ~"calc(100% - 17px)";
+}
+
+@media screen and (max-width: (@screen-sm-min - 1px)) {
+    .folders-container {
+        margin-left: -(@container-padding);
+        margin-right: -(@container-padding);
+    }
+}
+
+@media screen and (min-width: @screen-sm-min) {
+    .folders-container {
+        margin-left: -(@container-padding);
+        margin-right: -1px; // Fix 1px shift on sticked.
+    }
+
+    .folders-container.sticked {
+        position: fixed;
+        margin-left: 0;
+
+        .list-group-side {
+            margin-bottom: 0;
+        }
+
+        overflow: hidden;
+    }
 }
 
 #main > .calendar-container {
@@ -3607,7 +3635,8 @@ input.form-control[data-name="quick-search"] {
 }
 
 // buttons
-.form-group .left-dropdown > .btn.filters-button:hover span.caret {
+.form-group .left-dropdown > .btn.filters-button:hover span.caret,
+.btn-group .btn:hover span.caret {
     border-top-color: var(--caret-color-hover);
 }
 
@@ -3618,7 +3647,10 @@ input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  margin: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: -3px;
   box-sizing: content-box;
   overflow: hidden;
 }
@@ -3759,4 +3791,3 @@ input[type="checkbox"].filled:not(:disabled):after {
 @import "elements/buttons.less";
 @import "elements/popup-notification.less";
 @import "elements/grid.less";
-

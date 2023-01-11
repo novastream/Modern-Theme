@@ -1,5 +1,6 @@
 .date-title {
     text-align: center !important;
+    user-select: none;
 }
 
 .date-title h4 {
@@ -65,8 +66,18 @@
     }
 }
 
-.fc-unthemed td.fc-today {
-    background: var(--calendar-today-bg) !important;
+.fc-unthemed {
+    .fc-view-container {
+        td.fc-today {
+            background: var(--calendar-today-bg);
+        }
+
+        .fc-agenda-view .fc-time-grid-container {
+            td.fc-today {
+                background: transparent
+            }
+        }
+    }
 }
 
 .fc-unthemed th,
@@ -93,6 +104,56 @@
     .fc-event:hover {
         color: var(--text-white-color);
     }
+}
+
+.fc-view-container .fc-bgevent {
+    opacity: 0.5;
+}
+
+.fc.fc-unthemed {
+    overflow: hidden;
+}
+
+.fc-unthemed .fc-time-grid .fc-slats .fc-minor td {
+    //border-top-style: dashed;
+    border-top-style: none;
+}
+
+body .fc-now-indicator-arrow {
+    display: none;
+}
+
+body .fc-now-indicator {
+    opacity: 0.9;
+}
+
+body .fc-content-col > .fc-now-indicator-line {
+    height: 1px;
+    border-top: 1px solid var(--brand-danger);
+    border-bottom-width: 0;
+    background-color: var(--brand-danger);
+
+    &:before {
+        content: "";
+        position: inherit;
+        left: -4px;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        background-color: var(--brand-danger);
+        display: inline-block;
+        top: -4px;
+        opacity: 0.9;
+    }
+}
+
+.fc-today.fc-day-header > span,
+.fc-today > .fc-day-number {
+    color: var(--state-warning-text);
+}
+
+.fc-widget-header {
+    user-select: none;
 }
 
 .dashlet-body {
