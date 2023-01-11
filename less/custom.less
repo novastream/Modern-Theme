@@ -3562,6 +3562,10 @@ input.form-control[data-name="quick-search"] {
     padding: var(--input-small-padding);
 }
 
+.input-group-addon, .input-group-btn {
+    vertical-align: bottom;
+}
+
 // admin iframe
 .admin-content iframe {
     box-shadow: var(--reset-shadows);
@@ -3638,6 +3642,44 @@ input.form-control[data-name="quick-search"] {
 .form-group .left-dropdown > .btn.filters-button:hover span.caret,
 .btn-group .btn:hover span.caret {
     border-top-color: var(--caret-color-hover);
+}
+
+// select
+.form-control.selectize-control.single {
+    height: var(--form-control-height);
+}
+
+.selectize-input  {
+    min-height: var(--form-control-height);
+    padding: 9px 10px
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after, 
+.selectize-control.single .selectize-input:after {
+    top: 18px;
+    color: var(--caret-color);
+}
+
+.selectize-control.single .selectize-input.dropdown-active:hover:after, 
+.selectize-control.single .selectize-input:hover:after {
+    color: var(--caret-color-hover);
+}
+
+.selectize-control.single .selectize-input,
+.selectize-control.single .selectize-input.input-active, 
+.selectize-control.single .selectize-input.input-active input,
+.selectize-dropdown .selectize-dropdown-content > .option {
+    cursor: pointer;
+}
+
+.selectize-dropdown .option, 
+.selectize-dropdown .optgroup-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form-control.selectize-control.single {
+    z-index: 3;
 }
 
 // checkboxes
