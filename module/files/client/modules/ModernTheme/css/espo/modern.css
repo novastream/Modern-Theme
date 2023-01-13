@@ -6476,16 +6476,16 @@ button.close {
   --brand-danger-lighten-20: #f9b3b6;
   --brand-success-10: #008a78;
   --brand-warning-10: #d78c13;
-  --state-primary-text: #5b9aca;
+  --state-primary-text: #0091ae;
   --state-danger-bg: #f2dede;
-  --state-danger-text: #ad4846;
+  --state-danger-text: #f2545b;
   --state-danger-bg-5: #ebcccc;
   --state-danger-bg-10: #e4b9b9;
-  --state-danger-text-10: #893937;
-  --state-danger-text-10l: #c16765;
+  --state-danger-text-10: #ee252e;
+  --state-danger-text-10l: #f68388;
   --brand-info-10: #8873b8;
-  --state-info-text: #83779c;
-  --state-info-text-10: #6a5e82;
+  --state-info-text: #a595c9;
+  --state-info-text-10: #8873b8;
   --state-info-bg: #e5ddf8;
   --state-info-bg-5: #d5c8f4;
   --state-info-bg-10: #c5b3ef;
@@ -6495,9 +6495,9 @@ button.close {
   --state-success-text-10: #003333;
   --state-success-text-10l: #009998;
   --state-warning-bg: #fcf8e3;
-  --state-warning-text: #0091ae;
-  --state-warning-text-10: #00667b;
-  --state-warning-text-10l: #00bbe1;
+  --state-warning-text: #eda530;
+  --state-warning-text-10: #d78c13;
+  --state-warning-text-10l: #f1b95f;
   --state-warning-bg-5: #faf2cc;
   --state-warning-bg-10: #f7ecb5;
   --btn-default-bg: #eaf0f6;
@@ -6611,9 +6611,9 @@ button.close {
   --panel-default-text: #33475b;
   --panel-primary-text: #FEFEFE;
   --panel-success-text: #006665;
-  --panel-danger-text: #ad4846;
-  --panel-warning-text: #0091ae;
-  --panel-info-text: #83779c;
+  --panel-danger-text: #f2545b;
+  --panel-warning-text: #eda530;
+  --panel-info-text: #a595c9;
   --panel-default-border: #cbd6e2;
   --panel-primary-border: #005e71;
   --panel-danger-border: #f2dede;
@@ -6633,7 +6633,7 @@ button.close {
   --dropdown-border: #cbd6e2;
   --dropdown-divider-bg: #e5e5e5;
   --dropdown-box-shadow: 0 1px 24px 0 rgba(0, 0, 0, 0.08);
-  --calendar-today-bg: #e5f5f8;
+  --calendar-today-bg: #f5f8fa;
   --calendar-border: #dfe3eb;
   --calendar-busy-bg: #eeeeee;
   --select-item-text-color: #33475b;
@@ -6712,6 +6712,10 @@ button.close {
   --side-alert-height: 33px;
   --top-navbar-mobile-height: 55px;
   --list-container-margins: 0px;
+  --fc-cal-head-color: #425b76;
+  --fc-cal-head-bg: #f5f8fa;
+  --fc-cal-head-height: 38px;
+  --fc-cal-today-color: #33475b;
 }
 .selectize-control.plugin-drag_drop.multi > .selectize-input > div.ui-sortable-placeholder {
   visibility: visible !important;
@@ -14092,11 +14096,19 @@ body[data-navbar="side"] #navbar .navbar .navbar-right-container input.global-se
   body[data-navbar="side"] #navbar .navbar-right .global-search-container a.global-search-button,
   body[data-navbar="side"].minimized.side-menu-opened #navbar .navbar-right .global-search-container a.global-search-button {
     color: var(--navbar-link-color);
-    height: var(--side-search-btn-height-value);
+    height: var(--side-search-btn-height);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   body[data-navbar="side"] #navbar .navbar-right .global-search-container a.global-search-button:hover,
   body[data-navbar="side"].minimized.side-menu-opened #navbar .navbar-right .global-search-container a.global-search-button:hover {
     color: var(--navbar-link-hover-color);
+  }
+  body[data-navbar="side"] #navbar .navbar-right .global-search-container .input-group .input-group-btn,
+  body[data-navbar="side"].minimized.side-menu-opened #navbar .navbar-right .global-search-container .input-group .input-group-btn {
+    vertical-align: top;
   }
   body[data-navbar="side"] #navbar .navbar-right .quick-create-container,
   body[data-navbar="side"].minimized.side-menu-opened #navbar .navbar-right .quick-create-container {
@@ -14109,8 +14121,8 @@ body[data-navbar="side"] #navbar .navbar .navbar-right-container input.global-se
   body[data-navbar="side"] #navbar .navbar-right > li > a,
   body[data-navbar="side"].minimized.side-menu-opened #navbar .navbar-right > li > a {
     color: var(--navbar-link-color);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -19104,6 +19116,9 @@ body .modal-dialog .panel {
 #navbar .navbar ul.nav > li.tab-group > a:hover > span.group-caret {
   color: var(--navbar-inverse-caret-hover-color);
 }
+#navbar .navbar ul.nav > li.tab-group > a > span.group-caret:before {
+  content: "\f105";
+}
 table.table {
   border-color: var(--table-new-border-color);
   border-style: solid;
@@ -19156,12 +19171,15 @@ input.form-control[data-name="quick-search"] {
   border-radius: var(--input-small-radius);
   padding: var(--input-small-padding);
 }
-.input-group-addon,
 .input-group-btn {
   vertical-align: bottom;
 }
 .input-group .form-control {
   z-index: inherit;
+}
+.label-md {
+  font-size: 90%;
+  font-weight: 300;
 }
 .admin-content iframe {
   box-shadow: var(--reset-shadows);
@@ -19217,6 +19235,28 @@ input.form-control[data-name="quick-search"] {
 #layouts-menu .panel > .panel-heading {
   background-color: var(--admin-layout-list-bg);
 }
+.fc-today.fc-day-header > span,
+.fc-today > .fc-day-number {
+  color: var(--fc-cal-today-color);
+  font-weight: 500;
+}
+.fc th,
+.fc td {
+  vertical-align: middle!important;
+}
+th.fc-mon,
+th.fc-tue,
+th.fc-wed,
+th.fc-thu,
+th.fc-fri,
+th.fc-sat,
+th.fc-sun {
+  color: var(--fc-cal-head-color);
+}
+.fc-widget-header {
+  background-color: var(--calendar-today-bg);
+  height: var(--fc-cal-head-height);
+}
 .form-group .left-dropdown > .btn.filters-button:hover span.caret,
 .btn-group .btn:hover span.caret {
   border-top-color: var(--caret-color-hover);
@@ -19226,7 +19266,7 @@ input.form-control[data-name="quick-search"] {
 }
 .selectize-input {
   min-height: var(--form-control-height);
-  padding: 9px 10px;
+  padding: 7px 10px;
 }
 .selectize-control.single .selectize-input.dropdown-active:after,
 .selectize-control.single .selectize-input:after {
@@ -19247,6 +19287,14 @@ input.form-control[data-name="quick-search"] {
 .selectize-dropdown .optgroup-header {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.link-container > .list-group-item .link-item-column {
+  float: right;
+  display: inline-block;
+  width: 40%;
+}
+.link-container > .list-group-item .link-item-column > .selectize-control {
+  width: 100%;
 }
 input[type="radio"],
 input[type="checkbox"] {

@@ -21,18 +21,18 @@
 
 @brand-primary-text-value: #FFF;
 
-@state-primary-text-value: #5b9aca;
+@state-primary-text-value: @brand-primary-value;
 
 @state-success-bg-value: lighten(spin(@brand-success-value, 5), 30%);
 @state-success-text-value: darken(spin(@brand-success-value, 7), 17%);
 
 @state-info-bg-value: #e5ddf8;
-@state-info-text-value: #83779c;
+@state-info-text-value: @brand-info-value;
 
 @state-warning-bg-value: #fcf8e3;
-@state-warning-text-value: @brand-primary-value;
+@state-warning-text-value: @brand-warning-value;
 
-@state-danger-text-value: #ad4846;
+@state-danger-text-value: @brand-danger-value;
 @state-danger-bg-value: #f2dede;
 
 @default-box-shadow-value: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
@@ -194,7 +194,7 @@
 
 @gray-lighter-orange-mix-value: mix(orange, @gray-lighter-value, 50%);
 
-@calendar-today-bg-value: rgb(229, 245, 248);
+@calendar-today-bg-value: rgb(245, 248, 250);
 @calendar-border-value: rgb(223, 227, 235);
 @calendar-busy-bg-value: @gray-lighter-value;
 
@@ -288,3 +288,7 @@
 @side-alert-height-value: 33px;
 @top-navbar-mobile-height-value: 55px;
 @list-container-margins-value: 0px;
+@fc-cal-head-color-value: rgb(66, 91, 118);
+@fc-cal-head-bg-value: rgb(245, 248, 250);
+@fc-cal-head-height-value: 38px;
+@fc-cal-today-color-value: #33475b;

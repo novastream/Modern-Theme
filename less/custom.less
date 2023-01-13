@@ -3492,6 +3492,10 @@ body .modal-dialog .panel {
     color: var(--navbar-inverse-caret-hover-color);
 }
 
+#navbar .navbar ul.nav > li.tab-group > a > span.group-caret:before {
+    content: "\f105";
+}
+
 // table
 table.table {
     border-color: var(--table-new-border-color);
@@ -3562,12 +3566,18 @@ input.form-control[data-name="quick-search"] {
     padding: var(--input-small-padding);
 }
 
-.input-group-addon, .input-group-btn {
+.input-group-btn {
     vertical-align: bottom;
 }
 
 .input-group .form-control {
     z-index: inherit;
+}
+
+// labels 
+.label-md {
+    font-size: 90%;
+    font-weight: 300;
 }
 
 // admin iframe
@@ -3642,6 +3652,31 @@ input.form-control[data-name="quick-search"] {
     background-color: var(--admin-layout-list-bg);
 }
 
+// calendars
+.fc-today.fc-day-header > span, .fc-today > .fc-day-number {
+    color: var(--fc-cal-today-color);
+    font-weight: 500;
+}
+
+.fc th, .fc td {
+    vertical-align: middle!important;
+}
+
+th.fc-mon,
+th.fc-tue,
+th.fc-wed,
+th.fc-thu,
+th.fc-fri,
+th.fc-sat,
+th.fc-sun {
+    color: var(--fc-cal-head-color);
+}
+
+.fc-widget-header {
+    background-color: var(--calendar-today-bg);
+    height: var(--fc-cal-head-height);
+}
+
 // buttons
 .form-group .left-dropdown > .btn.filters-button:hover span.caret,
 .btn-group .btn:hover span.caret {
@@ -3655,7 +3690,7 @@ input.form-control[data-name="quick-search"] {
 
 .selectize-input  {
     min-height: var(--form-control-height);
-    padding: 9px 10px
+    padding: 7px 10px
 }
 
 .selectize-control.single .selectize-input.dropdown-active:after, 
@@ -3680,6 +3715,16 @@ input.form-control[data-name="quick-search"] {
 .selectize-dropdown .optgroup-header {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.link-container > .list-group-item .link-item-column {
+    float: right;
+    display: inline-block;
+    width: 40%;
+}
+
+.link-container > .list-group-item .link-item-column > .selectize-control {
+    width: 100%;
 }
 
 // checkboxes
