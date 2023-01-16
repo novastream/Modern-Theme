@@ -6695,6 +6695,7 @@ button.close {
   --table-td-padding: 10px 24px 10px 24px;
   --table-active-bg: #f5f8fa;
   --table-active-border-color: #dfe3eb;
+  --table-first-last-th-padding: 12px;
   --navbar-inverse-hover-bg: #253342;
   --navbar-inverse-caret-transition: all ease-in-out 0.15s;
   --navbar-inverse-caret-hover-color: #ff7a59;
@@ -13891,11 +13892,11 @@ body:not([data-navbar="side"]) .list-buttons-container .sticked-bar {
   }
   body:not([data-navbar="side"]) #content #main > .list-container > .list > table td:first-child,
   body:not([data-navbar="side"]) #content #main > .list-container > .list > table th:first-child {
-    padding-left: 14px;
+    padding-left: var(--table-first-last-th-padding);
   }
   body:not([data-navbar="side"]) #content #main > .list-container > .list > table td:last-child,
   body:not([data-navbar="side"]) #content #main > .list-container > .list > table th:last-child {
-    padding-right: 14px;
+    padding-right: var(--table-first-last-th-padding);
   }
   body:not([data-navbar="side"]) #content .list-categories-column + .list-main-column .list-container .list,
   body:not([data-navbar="side"]) #content .folders-container + .list-container .list {
@@ -14494,13 +14495,13 @@ body[data-navbar="side"].minimized .list-buttons-container .sticked-bar {
   body[data-navbar="side"].minimized #content #main .nested-categories-container + .list-container > .list > table td:first-child,
   body[data-navbar="side"].minimized #content #main > .list-container > .list > table th:first-child,
   body[data-navbar="side"].minimized #content #main .nested-categories-container + .list-container > .list > table th:first-child {
-    padding-left: 14px;
+    padding-left: var(--table-first-last-th-padding);
   }
   body[data-navbar="side"].minimized #content #main > .list-container > .list > table td:last-child,
   body[data-navbar="side"].minimized #content #main .nested-categories-container + .list-container > .list > table td:last-child,
   body[data-navbar="side"].minimized #content #main > .list-container > .list > table th:last-child,
   body[data-navbar="side"].minimized #content #main .nested-categories-container + .list-container > .list > table th:last-child {
-    padding-right: 14px;
+    padding-right: var(--table-first-last-th-padding);
   }
   body[data-navbar="side"].minimized .list-categories-column + .list-main-column .list-container .list,
   body[data-navbar="side"].minimized .folders-container + .list-container .list {
@@ -17266,8 +17267,8 @@ section .table {
   padding-right: 14px;
 }
 .modal-body > div > .list {
-  margin-left: -14px;
-  margin-right: -14px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .modal-body > div > .list > table td:first-child,
 .modal-body > div > .list > table th:first-child {
