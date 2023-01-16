@@ -3566,6 +3566,12 @@ input.form-control[data-name="quick-search"] {
     padding: var(--input-small-padding);
 }
 
+span.input-group-item {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .input-group-btn {
     vertical-align: bottom;
 }
@@ -3690,7 +3696,10 @@ th.fc-sun {
 
 .selectize-input  {
     min-height: var(--form-control-height);
-    padding: 7px 10px
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .selectize-control.single .selectize-input.dropdown-active:after, 
