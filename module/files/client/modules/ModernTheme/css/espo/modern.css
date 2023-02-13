@@ -15688,7 +15688,7 @@ body .panel-primary > .panel-heading .btn-group.open .dropdown-toggle.btn:focus 
   border-top-right-radius: 0;
 }
 .record .middle {
-  margin-bottom: var(--vertical-gap);
+  margin-bottom: 32px;
 }
 .record .middle > .panel:first-child {
   border-top-width: var(--panel-border-width);
@@ -16249,7 +16249,7 @@ a {
   font-weight: 400;
   transition: all 0.15s ease-out;
 }
-a[target=_blank]::after {
+a[target="_blank"]::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 80%;
@@ -16279,9 +16279,9 @@ button:focus-visible,
 button.btn:focus-visible,
 button.btn.active:focus-visible,
 .dropdown-toggle:focus:focus-visible,
-input[type=radio]:focus-visible,
-input[type=checkbox]:focus-visible,
-input[type=file]:focus-visible,
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:focus-visible,
+input[type="file"]:focus-visible,
 label.attach-file-label:focus-visible {
   outline: 1px solid var(--input-border-focus-rgba);
   outline-offset: -1px;
@@ -16289,7 +16289,7 @@ label.attach-file-label:focus-visible {
 .no-focus-outline:focus-visible {
   outline: none;
 }
-input[type=checkbox]:focus-visible {
+input[type="checkbox"]:focus-visible {
   outline-offset: 3px;
 }
 .block-center {
@@ -17622,7 +17622,7 @@ table.less-padding td.cell[data-name="buttons"] > .btn-group {
   overflow-y: visible;
 }
 .dashlets.grid-stack .ui-resizable-handle:before {
-  content: '' !important;
+  content: "" !important;
 }
 .dashlets.grid-stack > .grid-stack-item > .ui-resizable-se,
 .dashlets.grid-stack > .grid-stack-item > .ui-resizable-sw {
@@ -19155,10 +19155,10 @@ a.field-info:active {
 .detail .left .middle .panel:not(:first-child),
 .detail .left .extra .panel:not(:first-child),
 .detail .left .bottom .panel:not(:first-child) {
-  margin-bottom: 32px;
+  margin-bottom: var(--vertical-gap);
 }
 #login-form label,
-div.modal-container[id^='password-change-request-container-'] label,
+div.modal-container[id^="password-change-request-container-"] label,
 .checklist-label {
   font-weight: 300;
 }
@@ -19223,14 +19223,14 @@ span.input-group-item {
   background-color: var(--admin-layout-list-bg) !important;
   color: var(--admin-layout-list-color) !important;
   border-radius: var(--admin-layout-list-radius) !important;
-  font-weight: 300!important;
-  cursor: grab!important;
+  font-weight: 300 !important;
+  cursor: grab !important;
 }
 #layout ul li {
   border: var(--admin-layout-list-border) !important;
 }
 #layout ul li.item.ui-sortable-helper {
-  cursor: grabbing!important;
+  cursor: grabbing !important;
 }
 #layout ul.panels > li {
   background-color: var(--white-bg) !important;
@@ -19248,7 +19248,7 @@ span.input-group-item {
 }
 .fc th,
 .fc td {
-  vertical-align: middle!important;
+  vertical-align: middle !important;
 }
 th.fc-mon,
 th.fc-tue,
@@ -19325,7 +19325,7 @@ input[type="checkbox"]:hover {
 }
 input[type="radio"]:before,
 input[type="checkbox"]:before {
-  content: '';
+  content: "";
   display: block;
   box-sizing: content-box;
   width: 12px;
@@ -19346,7 +19346,7 @@ input[type="checkbox"]:disabled:before {
 }
 input[type="radio"]:after,
 input[type="checkbox"]:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   box-sizing: content-box;
