@@ -13876,6 +13876,7 @@ body:not([data-navbar="side"]) .list-buttons-container .sticked-bar {
   left: 0;
   top: 55px;
   padding-left: 15px;
+  display: none;
 }
 @media screen and (max-width: 767px) {
   body:not([data-navbar="side"]) .list-buttons-container .sticked-bar,
@@ -14405,6 +14406,7 @@ body[data-navbar="side"] .list-buttons-container .sticked-bar {
   left: 210px;
   top: 45px;
   padding-left: 15px;
+  display: none;
 }
 body[data-navbar="side"].minimized .list-buttons-container .sticked-bar {
   width: calc(100% -  42px);
@@ -17283,8 +17285,8 @@ section .table {
   border-right-width: 0;
 }
 #main > .list-container > .list {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 #main > .list-container > .list-tree > ul,
 .modal-body > .list-container > .list-tree > ul {
@@ -18844,8 +18846,8 @@ table.table-admin-panel td {
     float: right;
   }
   .list-categories-column + .list-main-column .list-container > .list {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .modal-body .categories-container + .list-container .list {
     margin-left: -14px;
