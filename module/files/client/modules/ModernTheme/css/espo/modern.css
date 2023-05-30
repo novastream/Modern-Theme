@@ -1073,7 +1073,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
@@ -1176,7 +1176,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Prompt", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 500;
   line-height: 1;
   color: inherit;
@@ -5714,7 +5714,7 @@ button.close {
   position: absolute;
   z-index: 1600;
   display: block;
-  font-family: "Prompt", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5840,7 +5840,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Prompt", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -13545,61 +13545,68 @@ body .fc-content-col > .fc-now-indicator-line:before {
   -o-transition: left 0s, top 0s, height 0s, width 0s;
   transition: left 0s, top 0s, height 0s, width 0s;
 }
-/* prompt-regular */
+/* lexend deca-100 */
 @font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
   font-style: normal;
-  font-weight: 400;
-  src: local('Prompt Regular'), local('Prompt-Regular'), url('../../fonts/prompt/Prompt-Regular.ttf') format('truetype');
+  font-weight: 100;
+  src: local("Lexend Deca Thin"), local("LexendDeca-Thin"), url("../../fonts/lexenddeca/LexendDeca-Thin.ttf") format("truetype");
 }
-/* prompt-italic */
+/* lexend deca-200 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Prompt Italic'), local('Prompt-Italic'), url('../../fonts/prompt/Prompt-Italic.ttf') format('truetype');
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Lexend Deca Extra Light"), local("LexendDeca-ExtraLight"), url("../../fonts/lexenddeca/LexendDeca-ExtraLight.ttf") format("truetype");
 }
-/* prompt-300 */
+/* lexend deca-300 */
 @font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 300;
-  src: local('Prompt Light'), local('Prompt-Light'), url('../../fonts/prompt/Prompt-Light.ttf') format('truetype');
+  src: local("Lexend Deca Light"), local("LexendDeca-Light"), url("../../fonts/lexenddeca/LexendDeca-Light.ttf") format("truetype");
 }
-/* prompt-300italic */
+/* lexend deca-400 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Prompt Light Italic'), local('Prompt-LightItalic'), url('../../fonts/prompt/Prompt-LightItalic.ttf') format('truetype');
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lexend Deca Regular"), local("LexendDeca-Regular"), url("../../fonts/lexenddeca/LexendDeca-Regular.ttf") format("truetype");
 }
-/* prompt-600 */
+/* lexend deca-500 */
 @font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Lexend Deca Medium"), local("LexendDeca-Medium"), url("../../fonts/lexenddeca/LexendDeca-Medium.ttf") format("truetype");
+}
+/* lexend deca-600 */
+@font-face {
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 600;
-  src: local('Prompt SemiBold'), local('Prompt-SemiBold'), url('../../fonts/prompt/Prompt-Medium.ttf') format('truetype');
+  src: local("Lexend Deca SemiBold"), local("LexendDeca-SemiBold"), url("../../fonts/lexenddeca/LexendDeca-SemiBold.ttf") format("truetype");
 }
-/* prompt-600italic */
+/* lexend deca-700 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Prompt SemiBold Italic'), local('Prompt-SemiBoldItalic'), url('../../fonts/prompt/Prompt-MediumItalic.ttf') format('truetype');
-}
-/* prompt-700 */
-@font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 700;
-  src: local('Prompt Bold'), local('Prompt-Bold'), url('../../fonts/prompt/Prompt-Bold.ttf') format('truetype');
+  src: local("Lexend Deca Bold"), local("LexendDeca-Bold"), url("../../fonts/lexenddeca/LexendDeca-Bold.ttf") format("truetype");
 }
-/* prompt-700italic */
+/* lexend deca-800 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Prompt Bold Italic'), local('Prompt-BoldItalic'), url('../../fonts/prompt/Prompt-BoldItalic.ttf') format('truetype');
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Lexend Deca Extra Bold"), local("LexendDeca-ExtraBold"), url("../../fonts/lexenddeca/LexendDeca-ExtraBold.ttf") format("truetype");
+}
+/* lexend deca-900 */
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lexend Deca Black"), local("LexendDeca-Black"), url("../../fonts/lexenddeca/LexendDeca-Black.ttf") format("truetype");
 }
 body:not([data-navbar="side"]) {
   padding-top: 52px;
