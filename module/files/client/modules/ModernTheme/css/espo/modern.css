@@ -6682,7 +6682,7 @@ button.close {
   --input-small-radius: 3px;
   --input-small-padding: 6px 7px;
   --table-new-border-color: #dfe3eb;
-  --table-th-font-weight: 400;
+  --table-th-font-weight: 500;
   --table-th-font-size: 12px;
   --table-th-bg-color: #f5f8fa;
   --table-th-hover-bg-color: #e5f5f8;
@@ -6691,6 +6691,7 @@ button.close {
   --table-th-text-align: left;
   --table-th-vertical-align: middle;
   --table-th-uppercase: uppercase;
+  --table-td-a-font-weight: 600;
   --table-td-height: 40px;
   --table-td-padding: 10px 24px 10px 24px;
   --table-active-bg: #f5f8fa;
@@ -16406,11 +16407,13 @@ label {
 .page-header > h3 {
   margin-bottom: 7px;
   font-size: 22px;
+  font-weight: 600;
 }
 @media screen and (max-width: 767px) {
   .page-header .header-title,
   .page-header > h3 {
     font-size: 21px;
+    font-weight: 600;
   }
 }
 .page-header .page-header-row {
@@ -16961,6 +16964,8 @@ input.global-search-input {
   margin-right: 0;
   float: right;
   padding: 7px 0;
+  font-size: 12px;
+  font-weight: 600;
 }
 .list-container .pagination {
   margin: 0;
@@ -17732,6 +17737,7 @@ body .note-editor .panel-heading > .btn-group > .btn-group > .btn > span {
 .show-more > .btn-block {
   text-align: center;
   padding: 7px 10px 7px 14px;
+  font-weight: 600;
 }
 label.attach-file-label {
   overflow: hidden;
@@ -19144,6 +19150,17 @@ table.table > tbody > tr > td {
   height: var(--table-td-height);
   padding: var(--table-td-padding);
 }
+table.table > thead > tr > th,
+table.table > thead > tr > th a {
+  font-weight: var(--table-th-font-weight);
+}
+table.table > tbody > tr > td > a {
+  font-weight: var(--table-td-a-font-weight);
+}
+table.table > tbody > tr > td > a[href^="tel:"],
+table.table > tbody > tr > td > a[href^="mailto:"] {
+  font-weight: 400;
+}
 th[data-name="r-checkbox"] {
   width: var(--table-th-height);
 }
@@ -19159,6 +19176,9 @@ a.field-info:active {
 }
 .modal-body .categories-container + .list-container > .list {
   margin-right: 0px;
+}
+.panel > .panel-heading > .panel-title {
+  font-weight: 600;
 }
 .edit .side .panel:first-child {
   margin-bottom: 32px;

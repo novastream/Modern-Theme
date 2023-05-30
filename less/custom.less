@@ -197,12 +197,14 @@ label {
   > h3 {
     margin-bottom: 7px;
     font-size: 22px;
+    font-weight: 600;
   }
 
   @media screen and (max-width: (@screen-sm-min - 1px)) {
     .header-title,
     > h3 {
       font-size: 21px;
+      font-weight: 600;
     }
   }
 
@@ -893,6 +895,8 @@ input.global-search-input {
   margin-right: 0;
   float: right;
   padding: 7px 0;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .list-container .pagination {
@@ -1879,6 +1883,7 @@ body .note-editor .panel-heading {
 .show-more > .btn-block {
   text-align: center;
   padding: 7px 10px 7px @panel-padding;
+  font-weight: 600;
 }
 
 label.attach-file-label {
@@ -3569,6 +3574,20 @@ table.table > tbody > tr > td {
   padding: var(--table-td-padding);
 }
 
+table.table > thead > tr > th,
+table.table > thead > tr > th a {
+  font-weight: var(--table-th-font-weight);
+}
+
+table.table > tbody > tr > td > a {
+  font-weight: var(--table-td-a-font-weight);
+}
+
+table.table > tbody > tr > td > a[href^="tel:"],
+table.table > tbody > tr > td > a[href^="mailto:"] {
+  font-weight: 400;
+}
+
 th[data-name="r-checkbox"] {
   width: var(--table-th-height);
 }
@@ -3589,6 +3608,11 @@ a.field-info:active {
 
 .modal-body .categories-container + .list-container > .list {
   margin-right: 0px;
+}
+
+// panels
+.panel > .panel-heading > .panel-title {
+  font-weight: 600;
 }
 
 // panels edit
