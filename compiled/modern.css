@@ -1073,7 +1073,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
@@ -1176,7 +1176,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: 500;
   line-height: 1;
   color: inherit;
@@ -5714,7 +5714,7 @@ button.close {
   position: absolute;
   z-index: 1600;
   display: block;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5840,7 +5840,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6414,7 +6414,7 @@ button.close {
   --body-bg: #f5f8fa;
   --panel-bg: #ffffff;
   --main-gray: #cbd6e2;
-  --white-color: #FEFEFE;
+  --white-color: #fefefe;
   --white-color-3: #f6f6f6;
   --white-color-5: #f1f1f1;
   --gray-base: #000;
@@ -6466,7 +6466,7 @@ button.close {
   --main-gray-25: #7995b4;
   --main-gray-40: #516f90;
   --main-gray-lighten-40: #ffffff;
-  --brand-primary-text: #FFF;
+  --brand-primary-text: #fff;
   --brand-primary-5: #007c95;
   --brand-primary-10: #00667b;
   --brand-primary-lighten-10: #00bbe1;
@@ -6583,7 +6583,7 @@ button.close {
   --modal-content-bg: #ffffff;
   --modal-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   --text-color: #33475b;
-  --text-white-color: #FEFEFE;
+  --text-white-color: #fefefe;
   --text-muted-color: #33475b;
   --text-gray-color: #33475b;
   --link-color: #0091ae;
@@ -6609,7 +6609,7 @@ button.close {
   --panel-warning-bg: #f9eabb;
   --panel-info-bg: #e5ddf8;
   --panel-default-text: #33475b;
-  --panel-primary-text: #FEFEFE;
+  --panel-primary-text: #fefefe;
   --panel-success-text: #006665;
   --panel-danger-text: #f2545b;
   --panel-warning-text: #eda530;
@@ -6625,8 +6625,8 @@ button.close {
   --login-panel-heading-bg: #2e3f50;
   --site-footer-bg: transparent;
   --site-footer-color: #0091ae;
-  --popover-bg: #FEFEFE;
-  --dropdown-bg: #FEFEFE;
+  --popover-bg: #fefefe;
+  --dropdown-bg: #fefefe;
   --dropdown-link-color: #33475b;
   --dropdown-link-hover-color: #2a3a4b;
   --dropdown-link-hover-bg: #e5f5f8;
@@ -6638,7 +6638,7 @@ button.close {
   --calendar-busy-bg: #eeeeee;
   --select-item-text-color: #33475b;
   --select-item-bg: #efefef;
-  --select-item-active-text-color: #FEFEFE;
+  --select-item-active-text-color: #fefefe;
   --select-item-active-bg: #0091ae;
   --select-item-border: #33475b;
   --label-color: #fff;
@@ -6650,7 +6650,7 @@ button.close {
   --scroll-width: 11px;
   --scroll-border-width: 0;
   --collapsed-modal-bg: #33475b;
-  --collapsed-modal-text-color: #FEFEFE;
+  --collapsed-modal-text-color: #fefefe;
   --default-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
   --top-bar-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
   --vertical-gap: 16px;
@@ -17070,6 +17070,9 @@ input.global-search-input {
 .field .link-container .list-group-item > div > div {
   margin: 6px 0;
 }
+.field .link-container .list-group-item .form-control {
+  width: 100%;
+}
 .field .link-container .list-group-item .form-control,
 .field .link-container .list-group-item .btn {
   margin-top: 1px;
@@ -18056,7 +18059,10 @@ stream-head-text-container .span {
   margin-bottom: 0;
 }
 .link-container .list-group-item {
-  padding: 6px 10px;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
   line-height: 21px;
 }
 .note-editable blockquote {

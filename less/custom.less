@@ -1042,6 +1042,10 @@ input.global-search-input {
   margin: 6px 0;
 }
 
+.field .link-container .list-group-item .form-control {
+  width: 100%;
+}
+
 .field .link-container .list-group-item .form-control,
 .field .link-container .list-group-item .btn {
   margin-top: 1px;
@@ -2318,7 +2322,10 @@ stream-head-text-container .span {
 }
 
 .link-container .list-group-item {
-  padding: @padding-base-vertical @padding-base-horizontal;
+  padding-top: @padding-base-vertical;
+  padding-bottom: @padding-base-vertical-acc;
+  padding-right: @padding-base-horizontal;
+  padding-left: @padding-base-horizontal;
   line-height: @line-height-computed;
 }
 

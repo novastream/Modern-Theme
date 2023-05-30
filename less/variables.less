@@ -3,7 +3,9 @@
 @navbar-width: 210px;
 @navbar-header-height: 65px;
 @navbar-logo-height: 39px;
-@navbar-header-vertical-padding: ((@navbar-header-height - @navbar-logo-height) / 2);
+@navbar-header-vertical-padding: (
+  (@navbar-header-height - @navbar-logo-height) / 2
+);
 @navbar-minimized-width: 42px;
 @navbar-tab-text-left-padding: 36px;
 @navbar-tab-left-padding: 12px;
@@ -33,7 +35,7 @@
 @btn-warning-border: var(--btn-warning-border);
 
 @brand-primary-10: var(--brand-primary-10);
-@brand-danger-10 : var(--brand-danger-10);
+@brand-danger-10: var(--brand-danger-10);
 @brand-info-10: var(--brand-info-10);
 @brand-success-10: var(--brand-success-10);
 @brand-warning-10: var(--brand-warning-10);
@@ -69,7 +71,7 @@
 @line-height-computed: floor(@font-size-base * @line-height-base);
 @headings-line-height: 1;
 
-@font-family-sans-serif: 'Prompt', sans-serif;
+@font-family-sans-serif: "Prompt", sans-serif;
 @font-family-base: @font-family-sans-serif;
 @headings-font-family: @font-family-base;
 
@@ -99,11 +101,11 @@
 @modal-content-bg: var(--modal-content-bg);
 
 .container-fixed() {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: @container-padding;
-    padding-right: @container-padding;
-    .clearfix();
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: @container-padding;
+  padding-right: @container-padding;
+  .clearfix();
 }
 
 @line-height-small-computed: floor((@font-size-base * @line-height-small));
@@ -156,7 +158,6 @@
 @pre-bg: @code-bg;
 @pre-color: @code-color;
 @pre-border-color: var(--code-border-color);
-
 
 @pre-border-color: @main-gray;
 @pre-bg: @code-bg;
@@ -269,7 +270,7 @@
 
 @navbar-inverse-toggle-border-color: transparent;
 
-@label-padding-small: .09em .5em .2em;
+@label-padding-small: 0.09em 0.5em 0.2em;
 @label-padding-medium: 1px 7px 2px;
 
 @list-table-sm-screen-min-width: 592px;
@@ -338,7 +339,9 @@
 @table-first-last-th-padding: var(--table-first-last-th-padding-value);
 @navbar-inverse-hover-bg: var(--navbar-inverse-hover-bg-value);
 @navbar-inverse-caret-transition: var(--navbar-inverse-caret-transition-value);
-@navbar-inverse-caret-hover-color: var(--navbar-inverse-caret-hover-color-value);
+@navbar-inverse-caret-hover-color: var(
+  --navbar-inverse-caret-hover-color-value
+);
 @input-light-bg: var(--input-light-bg-value);
 @field-info-color: var(--field-info-color-value);
 @field-info-hover-color: var(--field-info-hover-color-value);
@@ -357,3 +360,4 @@
 @fc-cal-head-bg: var(--fc-cal-head-bg-value);
 @fc-cal-head-height: var(--fc-cal-head-height-value);
 @fc-cal-today-color: var(--fc-cal-today-color-value);
+@padding-base-vertical-acc: 7px;
