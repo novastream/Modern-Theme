@@ -6662,6 +6662,9 @@ button.close {
   --default-body-font-weight: 300;
   --modal-footer-border: 1px solid #dfe3eb;
   --modal-header-border: 1px solid #dfe3eb;
+  --modal-header-bg-img: linear-gradient(-303deg, #00a4bd, #00afb2 56%, #00bda5);
+  --modal-header-text-color: #ffffff;
+  --modal-header-title-line-height: 29px;
   --form-control-height: 40px;
   --form-control-padding: 9px 10px;
   --form-control-font-size: 16px;
@@ -19237,6 +19240,14 @@ span.input-group-item {
 .modal-header {
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
+  background-image: var(--modal-header-bg-img);
+}
+.modal-title {
+  line-height: var(--modal-header-title-line-height);
+}
+.modal-title,
+.modal-title .modal-title-text {
+  color: var(--label-color);
 }
 .modal-footer {
   border-bottom-left-radius: var(--border-radius);
@@ -19510,8 +19521,8 @@ body > footer > p a {
   min-height: 37px;
 }
 .modal-header.fixed-height {
-  height: 43px;
-  max-height: 43px;
+  height: 51px;
+  max-height: 51px;
   overflow: hidden;
 }
 .modal-header.fixed-height .modal-title {
@@ -19532,7 +19543,8 @@ body > footer > p a {
   width: 60px;
 }
 .modal-header a {
-  color: var(--text-color);
+  color: var(--label-color);
+  text-decoration: none;
 }
 .modal-header .close {
   font-size: 42px;
@@ -19551,15 +19563,15 @@ body > footer > p a {
 .modal-header .close,
 .modal-header .close > .fas,
 .modal-header .close > .far {
-  color: var(--text-muted-color);
+  color: var(--label-color);
 }
 .modal-header .close:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 .modal-header .close:hover,
 .modal-header .close:hover > .fas,
 .modal-header .close:hover > .far {
-  color: var(--btn-text-color);
+  color: var(--label-color);
 }
 .modal-header .collapse-button {
   float: right;
@@ -19571,12 +19583,15 @@ body > footer > p a {
 .modal-header .collapse-button,
 .modal-header .collapse-button > .fas,
 .modal-header .collapse-button > .far {
-  color: var(--text-muted-color);
+  color: var(--label-color);
+}
+.modal-header .collapse-button:hover {
+  opacity: 0.8;
 }
 .modal-header .collapse-button:hover,
 .modal-header .collapse-button:hover > .fas,
 .modal-header .collapse-button:hover > .far {
-  color: var(--btn-text-color);
+  color: var(--label-color);
 }
 .modal-footer {
   margin-top: 10px;
@@ -19614,8 +19629,8 @@ body > footer > p a {
   padding-bottom: 10px;
 }
 .modal-header {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 .modal-header + .modal-footer {
   position: relative;
@@ -19706,10 +19721,10 @@ body > footer > p a {
 }
 .modal {
   text-align: center;
-  padding: 0!important;
+  padding: 0 !important;
 }
 .modal:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
