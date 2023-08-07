@@ -6700,6 +6700,8 @@ button.close {
   --table-active-bg: #f5f8fa;
   --table-active-border-color: #dfe3eb;
   --table-first-last-th-padding: 12px;
+  --table-td-email-unread-font-weight: 600;
+  --table-td-email-read-font-weight: 400;
   --navbar-inverse-hover-bg: #253342;
   --navbar-inverse-caret-transition: all ease-in-out 0.15s;
   --navbar-inverse-caret-hover-color: #ff7a59;
@@ -19169,6 +19171,12 @@ th[data-name="r-checkbox"] {
 }
 th[data-name="r-checkbox"]:hover .btn > .caret {
   color: var(--caret-color-hover);
+}
+div.list[data-scope="Email"] table.table > tbody > tr > td[data-name="subject"] > a {
+  font-weight: var(--table-td-email-read-font-weight);
+}
+div.list[data-scope="Email"] table.table > tbody > tr > td[data-name="subject"] > a.text-bold {
+  font-weight: var(--table-td-email-unread-font-weight);
 }
 a.field-info {
   color: var(--field-info-color);

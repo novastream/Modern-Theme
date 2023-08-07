@@ -3596,6 +3596,24 @@ th[data-name="r-checkbox"]:hover .btn > .caret {
   color: var(--caret-color-hover);
 }
 
+div.list[data-scope="Email"]
+  table.table
+  > tbody
+  > tr
+  > td[data-name="subject"]
+  > a {
+  font-weight: var(--table-td-email-read-font-weight);
+}
+
+div.list[data-scope="Email"]
+  table.table
+  > tbody
+  > tr
+  > td[data-name="subject"]
+  > a.text-bold {
+  font-weight: var(--table-td-email-unread-font-weight);
+}
+
 // links
 a.field-info {
   color: var(--field-info-color);
