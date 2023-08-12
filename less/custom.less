@@ -3614,6 +3614,49 @@ div.list[data-scope="Email"]
   font-weight: var(--table-td-email-unread-font-weight);
 }
 
+// dashlets
+.dashlets.grid-stack .grid-stack-item .dashlet {
+  border: 2px solid transparent;
+  padding: 5px;
+}
+
+.dashlets.grid-stack .grid-stack-item .dashlet:hover {
+  box-shadow: var(--panel-box-shadow-hover);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.dashlets.grid-stack > .grid-stack-item > .ui-resizable-se,
+.dashlets.grid-stack > .grid-stack-item > .ui-resizable-sw {
+  background-image: url(../../img/dashlet-resize-handle.svg);
+  background-position-x: 5px;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+}
+
+.dashlets.grid-stack .grid-stack-item .dashlet .panel-heading {
+  background-color: #ffffff;
+  border: none;
+  background-image: url(../../img/dashlet-drag-handle.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  cursor: move;
+}
+
+.dashlets.grid-stack .grid-stack-item .dashlet .panel-heading .panel-title {
+  font-size: var(--dashlet-title-font-size);
+}
+
+.dashlets.grid-stack
+  .grid-stack-item
+  .dashlet
+  .panel-heading
+  .dropdown-toggle.btn
+  span.fas {
+  font-size: var(--dashlet-title-font-size);
+}
+
 // links
 a.field-info {
   color: var(--field-info-color);

@@ -6659,6 +6659,8 @@ button.close {
   --reset-border-radius: 0;
   --panel-default-heading-bg: #eaf0f6;
   --panel-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
+  --panel-box-shadow-hover: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+  --dashlet-title-font-size: 16px;
   --default-body-font-weight: 300;
   --modal-footer-border: 1px solid #dfe3eb;
   --modal-header-border: 1px solid #dfe3eb;
@@ -19177,6 +19179,37 @@ div.list[data-scope="Email"] table.table > tbody > tr > td[data-name="subject"] 
 }
 div.list[data-scope="Email"] table.table > tbody > tr > td[data-name="subject"] > a.text-bold {
   font-weight: var(--table-td-email-unread-font-weight);
+}
+.dashlets.grid-stack .grid-stack-item .dashlet {
+  border: 2px solid transparent;
+  padding: 5px;
+}
+.dashlets.grid-stack .grid-stack-item .dashlet:hover {
+  box-shadow: var(--panel-box-shadow-hover);
+  transition: box-shadow 0.15s ease-in-out;
+}
+.dashlets.grid-stack > .grid-stack-item > .ui-resizable-se,
+.dashlets.grid-stack > .grid-stack-item > .ui-resizable-sw {
+  background-image: url(../../img/dashlet-resize-handle.svg);
+  background-position-x: 5px;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+}
+.dashlets.grid-stack .grid-stack-item .dashlet .panel-heading {
+  background-color: #ffffff;
+  border: none;
+  background-image: url(../../img/dashlet-drag-handle.svg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  cursor: move;
+}
+.dashlets.grid-stack .grid-stack-item .dashlet .panel-heading .panel-title {
+  font-size: var(--dashlet-title-font-size);
+}
+.dashlets.grid-stack .grid-stack-item .dashlet .panel-heading .dropdown-toggle.btn span.fas {
+  font-size: var(--dashlet-title-font-size);
 }
 a.field-info {
   color: var(--field-info-color);
