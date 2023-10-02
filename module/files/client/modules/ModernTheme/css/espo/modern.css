@@ -13771,7 +13771,7 @@ body:not([data-navbar="side"]) #navbar .navbar .navbar-right > li > a {
 }
 @media screen and (min-width: 768px) {
   body:not([data-navbar="side"]) #navbar .navbar input.global-search-input {
-    width: 250px;
+    width: 195px;
     height: 38px;
     padding-bottom: 4px;
     padding-top: 4px;
