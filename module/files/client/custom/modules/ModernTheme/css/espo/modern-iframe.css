@@ -2,7 +2,7 @@
   --body-bg: #f5f8fa;
   --panel-bg: #ffffff;
   --main-gray: #cbd6e2;
-  --white-color: #FEFEFE;
+  --white-color: #fefefe;
   --white-color-3: #f6f6f6;
   --white-color-5: #f1f1f1;
   --gray-base: #000;
@@ -42,9 +42,9 @@
   --gray-lighter-orange-mix-25: #e1960e;
   --gray-lighter-orange-mix-40: #996609;
   --brand-primary: #0091ae;
-  --brand-danger: #ff7a59;
+  --brand-danger: #f2545b;
   --brand-info: #a595c9;
-  --brand-success: #0091ae;
+  --brand-success: #00bda5;
   --brand-warning: #eda530;
   --main-gray-5: #bbc9d9;
   --main-gray-7: #b4c4d5;
@@ -54,38 +54,38 @@
   --main-gray-25: #7995b4;
   --main-gray-40: #516f90;
   --main-gray-lighten-40: #ffffff;
-  --brand-primary-text: #FFF;
+  --brand-primary-text: #fff;
   --brand-primary-5: #007c95;
   --brand-primary-10: #00667b;
   --brand-primary-lighten-10: #00bbe1;
   --brand-primary-lighten-30: #48e0ff;
   --brand-primary-lighten-50: #aef2ff;
-  --brand-danger-10: #ff5126;
-  --brand-danger-lighten-20: #ffccbf;
-  --brand-success-10: #00667b;
+  --brand-danger-10: #ee252e;
+  --brand-danger-lighten-20: #f9b3b6;
+  --brand-success-10: #008a78;
   --brand-warning-10: #d78c13;
-  --state-primary-text: #5b9aca;
+  --state-primary-text: #0091ae;
   --state-danger-bg: #f2dede;
-  --state-danger-text: #ad4846;
+  --state-danger-text: #f2545b;
   --state-danger-bg-5: #ebcccc;
   --state-danger-bg-10: #e4b9b9;
-  --state-danger-text-10: #893937;
-  --state-danger-text-10l: #c16765;
+  --state-danger-text-10: #ee252e;
+  --state-danger-text-10l: #f68388;
   --brand-info-10: #8873b8;
-  --state-info-text: #83779c;
-  --state-info-text-10: #6a5e82;
+  --state-info-text: #a595c9;
+  --state-info-text-10: #8873b8;
   --state-info-bg: #e5ddf8;
   --state-info-bg-5: #d5c8f4;
   --state-info-bg-10: #c5b3ef;
-  --state-success-text: #003f57;
-  --state-success-bg: #48d1ff;
-  --state-success-bg-5: #2ecbff;
-  --state-success-text-10: #001a24;
-  --state-success-text-10l: #00638a;
+  --state-success-text: #006665;
+  --state-success-bg: #57fff8;
+  --state-success-bg-5: #3efff7;
+  --state-success-text-10: #003333;
+  --state-success-text-10l: #009998;
   --state-warning-bg: #fcf8e3;
-  --state-warning-text: #9E7328;
-  --state-warning-text-10: #75551e;
-  --state-warning-text-10l: #c79132;
+  --state-warning-text: #eda530;
+  --state-warning-text-10: #d78c13;
+  --state-warning-text-10l: #f1b95f;
   --state-warning-bg-5: #faf2cc;
   --state-warning-bg-10: #f7ecb5;
   --btn-default-bg: #eaf0f6;
@@ -102,20 +102,20 @@
   --btn-primary-hover-border: #ff8f73;
   --btn-primary-active-bg: #ff8f73;
   --btn-primary-active-border: #ff8f73;
-  --btn-success-bg: #425b76;
-  --btn-success-border: #425b76;
+  --btn-success-bg: #00bda5;
+  --btn-success-border: #00bda5;
   --btn-success-color: #fff;
-  --btn-success-hover-bg: #516f90;
-  --btn-success-hover-border: #516f90;
-  --btn-success-active-bg: #516f90;
-  --btn-success-active-border: #516f90;
-  --btn-danger-bg: #ff7a59;
-  --btn-danger-border: #ff7a59;
+  --btn-success-hover-bg: #00d7bb;
+  --btn-success-hover-border: #00d7bb;
+  --btn-success-active-bg: #00d7bb;
+  --btn-success-active-border: #00d7bb;
+  --btn-danger-bg: #f2545b;
+  --btn-danger-border: #f2545b;
   --btn-danger-color: #fff;
-  --btn-danger-hover-bg: #ff8f73;
-  --btn-danger-hover-border: #ff8f73;
-  --btn-danger-active-bg: #ff8f73;
-  --btn-danger-active-border: #ff8f73;
+  --btn-danger-hover-bg: #ff5962;
+  --btn-danger-hover-border: #ff5962;
+  --btn-danger-active-bg: #ff5962;
+  --btn-danger-active-border: #ff5962;
   --btn-warning-bg: #eda530;
   --btn-warning-border: #eda530;
   --btn-warning-color: #fff;
@@ -137,11 +137,11 @@
   --btn-wide-width: 100px;
   --btn-x-wide-width: 150px;
   --btn-xx-wide-width: 200px;
-  --navbar-bg: #f5f8fa;
+  --navbar-bg: #e5f5f8;
   --navbar-link-color: #33475b;
   --navbar-link-hover-color: #555555;
   --navbar-link-hover-bg: #f5f8fa;
-  --navbar-link-active-bg: #d3e0e9;
+  --navbar-link-active-bg: #bde6ed;
   --navbar-box-shadow: none;
   --navbar-inverse-color: #33475b;
   --navbar-inverse-bg: #2e3f50;
@@ -171,7 +171,7 @@
   --modal-content-bg: #ffffff;
   --modal-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   --text-color: #33475b;
-  --text-white-color: #FEFEFE;
+  --text-white-color: #fefefe;
   --text-muted-color: #33475b;
   --text-gray-color: #33475b;
   --link-color: #0091ae;
@@ -183,6 +183,7 @@
   --code-color: #33475b;
   --blockquote-border-color: #eeeeee;
   --border-radius: 3px;
+  --border-radius-small: 2px;
   --dropdown-border-radius: 3px;
   --dropdown-border-width: 1px;
   --default-heading-bg-color: #cbd6e2;
@@ -191,20 +192,20 @@
   --panel-border-width: 0px;
   --panel-default-bg: #ffffff;
   --panel-primary-bg: #005e71;
-  --panel-success-bg: #48d1ff;
+  --panel-success-bg: #57fff8;
   --panel-danger-bg: #f2dede;
   --panel-warning-bg: #f9eabb;
   --panel-info-bg: #e5ddf8;
   --panel-default-text: #33475b;
-  --panel-primary-text: #FEFEFE;
-  --panel-success-text: #003f57;
-  --panel-danger-text: #ad4846;
-  --panel-warning-text: #9E7328;
-  --panel-info-text: #83779c;
+  --panel-primary-text: #fefefe;
+  --panel-success-text: #006665;
+  --panel-danger-text: #f2545b;
+  --panel-warning-text: #eda530;
+  --panel-info-text: #a595c9;
   --panel-default-border: #cbd6e2;
   --panel-primary-border: #005e71;
   --panel-danger-border: #f2dede;
-  --panel-success-border: #48d1ff;
+  --panel-success-border: #57fff8;
   --panel-warning-border: #f9eabb;
   --panel-info-border: #e5ddf8;
   --panel-heading-height: 30px;
@@ -212,20 +213,20 @@
   --login-panel-heading-bg: #2e3f50;
   --site-footer-bg: transparent;
   --site-footer-color: #0091ae;
-  --popover-bg: #FEFEFE;
-  --dropdown-bg: #FEFEFE;
+  --popover-bg: #fefefe;
+  --dropdown-bg: #fefefe;
   --dropdown-link-color: #33475b;
   --dropdown-link-hover-color: #2a3a4b;
   --dropdown-link-hover-bg: #e5f5f8;
   --dropdown-border: #cbd6e2;
   --dropdown-divider-bg: #e5e5e5;
   --dropdown-box-shadow: 0 1px 24px 0 rgba(0, 0, 0, 0.08);
-  --calendar-today-bg: #e5f5f8;
+  --calendar-today-bg: #f5f8fa;
   --calendar-border: #dfe3eb;
   --calendar-busy-bg: #eeeeee;
   --select-item-text-color: #33475b;
   --select-item-bg: #efefef;
-  --select-item-active-text-color: #FEFEFE;
+  --select-item-active-text-color: #fefefe;
   --select-item-active-bg: #0091ae;
   --select-item-border: #33475b;
   --label-color: #fff;
@@ -237,17 +238,23 @@
   --scroll-width: 11px;
   --scroll-border-width: 0;
   --collapsed-modal-bg: #33475b;
-  --collapsed-modal-text-color: #FEFEFE;
+  --collapsed-modal-text-color: #fefefe;
   --default-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
   --top-bar-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
   --vertical-gap: 16px;
+  --white-bg: #ffffff;
   --reset-shadows: none;
   --reset-border-radius: 0;
   --panel-default-heading-bg: #eaf0f6;
   --panel-box-shadow: rgba(45, 62, 80, 0.12) 0px 1px 5px 0px;
+  --panel-box-shadow-hover: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+  --dashlet-title-font-size: 16px;
   --default-body-font-weight: 300;
   --modal-footer-border: 1px solid #dfe3eb;
   --modal-header-border: 1px solid #dfe3eb;
+  --modal-header-bg-img: linear-gradient(-303deg, #00a4bd, #00afb2 56%, #00bda5);
+  --modal-header-text-color: #ffffff;
+  --modal-header-title-line-height: 29px;
   --form-control-height: 40px;
   --form-control-padding: 9px 10px;
   --form-control-font-size: 16px;
@@ -266,8 +273,9 @@
   --caret-color-hover: #7c98b6;
   --input-small-font-size: 12.5px;
   --input-small-radius: 3px;
+  --input-small-padding: 6px 7px;
   --table-new-border-color: #dfe3eb;
-  --table-th-font-weight: 400;
+  --table-th-font-weight: 500;
   --table-th-font-size: 12px;
   --table-th-bg-color: #f5f8fa;
   --table-th-hover-bg-color: #e5f5f8;
@@ -276,77 +284,103 @@
   --table-th-text-align: left;
   --table-th-vertical-align: middle;
   --table-th-uppercase: uppercase;
+  --table-td-a-font-weight: 600;
   --table-td-height: 40px;
   --table-td-padding: 10px 24px 10px 24px;
   --table-active-bg: #f5f8fa;
   --table-active-border-color: #dfe3eb;
+  --table-first-last-th-padding: 12px;
+  --table-td-email-unread-font-weight: 600;
+  --table-td-email-read-font-weight: 400;
   --navbar-inverse-hover-bg: #253342;
   --navbar-inverse-caret-transition: all ease-in-out 0.15s;
   --navbar-inverse-caret-hover-color: #ff7a59;
   --input-light-bg: #ffffff;
   --field-info-color: #7c98b6;
   --field-info-hover-color: #7c98b6;
+  --admin-layout-list-bg: #f8f9fb;
+  --admin-layout-list-color: #374859;
+  --admin-layout-list-radius: 3px;
+  --admin-layout-list-border: 1px solid #c4d0dd;
+  --admin-layout-list-row-bg: #f5f8fa;
+  --side-search-input-height: 34px;
+  --side-navbar-border: 1px solid #7fd1de;
+  --side-search-btn-height: 34px;
+  --side-alert-height: 33px;
+  --top-navbar-mobile-height: 55px;
+  --list-container-margins: 0px;
+  --fc-cal-head-color: #425b76;
+  --fc-cal-head-bg: #f5f8fa;
+  --fc-cal-head-height: 38px;
+  --fc-cal-today-color: #33475b;
 }
-/* prompt-regular */
+/* lexend deca-100 */
 @font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
   font-style: normal;
-  font-weight: 400;
-  src: local('Prompt Regular'), local('Prompt-Regular'), url('../../fonts/prompt/Prompt-Regular.ttf') format('truetype');
+  font-weight: 100;
+  src: local("Lexend Deca Thin"), local("LexendDeca-Thin"), url("../../fonts/lexenddeca/LexendDeca-Thin.ttf") format("truetype");
 }
-/* prompt-italic */
+/* lexend deca-200 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Prompt Italic'), local('Prompt-Italic'), url('../../fonts/prompt/Prompt-Italic.ttf') format('truetype');
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Lexend Deca Extra Light"), local("LexendDeca-ExtraLight"), url("../../fonts/lexenddeca/LexendDeca-ExtraLight.ttf") format("truetype");
 }
-/* prompt-300 */
+/* lexend deca-300 */
 @font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 300;
-  src: local('Prompt Light'), local('Prompt-Light'), url('../../fonts/prompt/Prompt-Light.ttf') format('truetype');
+  src: local("Lexend Deca Light"), local("LexendDeca-Light"), url("../../fonts/lexenddeca/LexendDeca-Light.ttf") format("truetype");
 }
-/* prompt-300italic */
+/* lexend deca-400 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Prompt Light Italic'), local('Prompt-LightItalic'), url('../../fonts/prompt/Prompt-LightItalic.ttf') format('truetype');
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lexend Deca Regular"), local("LexendDeca-Regular"), url("../../fonts/lexenddeca/LexendDeca-Regular.ttf") format("truetype");
 }
-/* prompt-600 */
+/* lexend deca-500 */
 @font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Lexend Deca Medium"), local("LexendDeca-Medium"), url("../../fonts/lexenddeca/LexendDeca-Medium.ttf") format("truetype");
+}
+/* lexend deca-600 */
+@font-face {
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 600;
-  src: local('Prompt SemiBold'), local('Prompt-SemiBold'), url('../../fonts/prompt/Prompt-Medium.ttf') format('truetype');
+  src: local("Lexend Deca SemiBold"), local("LexendDeca-SemiBold"), url("../../fonts/lexenddeca/LexendDeca-SemiBold.ttf") format("truetype");
 }
-/* prompt-600italic */
+/* lexend deca-700 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Prompt SemiBold Italic'), local('Prompt-SemiBoldItalic'), url('../../fonts/prompt/Prompt-MediumItalic.ttf') format('truetype');
-}
-/* prompt-700 */
-@font-face {
-  font-family: 'Prompt';
+  font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 700;
-  src: local('Prompt Bold'), local('Prompt-Bold'), url('../../fonts/prompt/Prompt-Bold.ttf') format('truetype');
+  src: local("Lexend Deca Bold"), local("LexendDeca-Bold"), url("../../fonts/lexenddeca/LexendDeca-Bold.ttf") format("truetype");
 }
-/* prompt-700italic */
+/* lexend deca-800 */
 @font-face {
-  font-family: 'Prompt';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Prompt Bold Italic'), local('Prompt-BoldItalic'), url('../../fonts/prompt/Prompt-BoldItalic.ttf') format('truetype');
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Lexend Deca Extra Bold"), local("LexendDeca-ExtraBold"), url("../../fonts/lexenddeca/LexendDeca-ExtraBold.ttf") format("truetype");
+}
+/* lexend deca-900 */
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lexend Deca Black"), local("LexendDeca-Black"), url("../../fonts/lexenddeca/LexendDeca-Black.ttf") format("truetype");
 }
 body,
 table {
   font-size: 14px;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   color: var(--text-color);
 }
 body {
