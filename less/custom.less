@@ -55,7 +55,8 @@ button.btn.active:focus-visible,
 input[type="radio"]:focus-visible,
 input[type="checkbox"]:focus-visible,
 input[type="file"]:focus-visible,
-label.attach-file-label:focus-visible {
+label.attach-file-label:focus-visible,
+.iti__selected-flag:focus-visible {
   outline: 1px solid var(--input-border-focus-rgba);
   outline-offset: -1px;
 }
@@ -3527,6 +3528,207 @@ a.close:hover {
   }
 }
 
+.draggable-helper {
+  border-radius: var(--border-radius);
+  background-color: var(--state-info-bg);
+  border: 1px solid var(--state-info-bg-10);
+  color: var(--state-info-text);
+  padding: @padding-base-vertical 20px;
+  font-weight: 600;
+  opacity: 1;
+  position: absolute;
+  z-index: 10002;
+}
+
+.reminders-container {
+  > .reminder {
+      table-layout: fixed;
+      width: 100%;
+
+      > .input-group-item:first-child {
+          width: 40%;
+      }
+
+      > .input-group-btn {
+          width: 35px;
+      }
+  }
+}
+
+.input-group-link-parent {
+  table-layout: fixed;
+  width: 100%;
+
+  > .input-group-item:first-child {
+      width: 34%;
+  }
+
+  > .input-group-btn {
+      width: calc(35px * 2);
+  }
+}
+
+.phone-number-block-container {
+  .input-group.phone-number-block {
+      table-layout: fixed;
+      width: 100%;
+
+      > .input-group-item:first-child {
+          width: 24%;
+      }
+
+      > .input-group-btn {
+          .btn.phone-property.active {
+              z-index: unset;
+          }
+
+          width: calc(35px * 2 + 1px);
+      }
+  }
+
+  &.many {
+      .input-group.phone-number-block {
+          > .input-group-btn {
+              width: calc(35px * 4 + 1px);
+          }
+      }
+  }
+}
+
+.input-group-currency {
+  display: flex;
+
+  > .input-group-item:first-child {
+      flex-grow: 1;
+      display: block;
+  }
+
+  > .input-group-item:last-child {
+      flex-grow: 1;
+      display: block;
+      min-width: 70px;
+      max-width: 80px;
+  }
+
+  > .input-group-addon:last-child {
+      flex-grow: 1;
+      display: block;
+      min-width: fit-content;
+      max-width: fit-content;
+  }
+}
+
+body > .autocomplete-suggestions.text-search-suggestions {
+  > .autocomplete-suggestion {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      > span {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: inline-block;
+          width: ~"calc(100% - 20px)";
+          height: 24px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+      }
+
+      > a {
+          margin-top: 3px;
+      }
+  }
+}
+
+.popover {
+  max-width: 300px;
+
+  .popover-title {
+      line-height: 1.5;
+  }
+}
+
+.input-group-item > .iti {
+  top: 3px;
+  margin-left: -1px;
+  width: ~"calc(100% + 1px)";
+
+  .iti__flag-container {
+      user-select: none;
+
+      &,
+      &:hover {
+          .iti__selected-flag {
+              background-color: transparent;
+
+              &[aria-expanded="true"] {
+                  background-color: var(--dropdown-link-hover-bg);
+              }
+          }
+      }
+
+      .iti__country-list {
+          z-index: 5;
+          max-height: 300px;
+          background-color: var(--dropdown-bg);
+          border: var(--dropdown-border) solid var(--dropdown-border-width);
+          border-radius: var(--dropdown-border-radius);
+          box-shadow: var(--dropdown-box-shadow);
+
+          .iti__dial-code {
+              color: var(--text-muted-color);
+          }
+
+          .iti__country {
+              color: var(--dropdown-link-color);
+              padding: 4px 10px;
+
+              &.iti__highlight {
+                  background-color: var(--dropdown-link-hover-bg);
+              }
+          }
+
+          .iti__divider {
+              border-bottom-color: var(--dropdown-divider-bg);
+          }
+
+          padding: 5px 0;
+      }
+  }
+
+  .iti__selected-flag {
+      z-index: 4;
+      padding: 0 8px 0 8px;
+      color: var(--gray-soft);
+
+      > .iti__arrow {
+          visibility: hidden;
+          display: none;
+      }
+
+      &:after {
+          content: " ";
+          color: var(--text-muted-color);
+          //display: inline-block;
+          display: none;
+          width: 0;
+          height: 0;
+          top: 15px;
+          right: 8px;
+          margin-left: 2px;
+          vertical-align: middle;
+          border-top: 4px dashed;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+          position: absolute;
+      }
+  }
+
+  > input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+}
+
 // added by Novastream AB
 body .modal-dialog .panel-default.headered,
 body .modal-dialog .panel {
@@ -3719,7 +3921,7 @@ span.input-group-item {
 }
 
 .input-group-btn {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .input-group .form-control {
@@ -3884,6 +4086,10 @@ th.fc-sun {
   padding-bottom: 5px;
 }
 
+.selectize-control.multi .selectize-input > div {
+  padding: 3px 4px;
+}
+
 .link-container > .list-group-item .link-item-column {
   float: right;
   display: inline-block;
@@ -4040,6 +4246,9 @@ input[type="checkbox"].filled:not(:disabled):after {
   }
 }
 
+@import "misc/kanban.less";
+
+@import "elements/placement.less";
 @import "elements/site.less";
 @import "elements/modal.less";
 @import "elements/buttons.less";
