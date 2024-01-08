@@ -6701,7 +6701,7 @@ button.close {
   --table-td-padding: 10px 24px 10px 24px;
   --table-active-bg: #f5f8fa;
   --table-active-border-color: #dfe3eb;
-  --table-first-last-th-padding: 12px;
+  --table-first-last-th-padding: 10px;
   --table-td-email-unread-font-weight: 600;
   --table-td-email-read-font-weight: 400;
   --navbar-inverse-hover-bg: #253342;
@@ -18603,11 +18603,11 @@ section .table {
 @media screen and (min-width: 768px) {
   #main > .list-container > .list > table td:first-child,
   #main > .list-container > .list > table th:first-child {
-    padding-left: 15px;
+    padding-left: var(--table-first-last-th-padding);
   }
   #main > .list-container > .list > table td:last-child,
   #main > .list-container > .list > table th:last-child {
-    padding-right: 15px;
+    padding-right: var(--table-first-last-th-padding);
   }
   .modal-body .categories-container + .list-container .list,
   .list-categories-column + .list-main-column .list-container .list,
@@ -19270,11 +19270,11 @@ td > span.color-icon {
   }
   #main > .list-container > .list > table td:first-child,
   #main > .list-container > .list > table th:first-child {
-    padding-left: 10px;
+    padding-left: var(--table-first-last-th-padding);
   }
   #main > .list-container > .list > table td:last-child,
   #main > .list-container > .list > table th:last-child {
-    padding-right: 10px;
+    padding-right: var(--table-first-last-th-padding);
   }
 }
 .expanded-row span.label {
@@ -20604,7 +20604,7 @@ table.table > tbody > tr > td > a[href^="mailto:"] {
   font-weight: 400;
 }
 th[data-name="r-checkbox"] {
-  width: var(--table-th-height);
+  width: var(--table-th-height) !important;
 }
 th[data-name="r-checkbox"]:hover .btn > .caret {
   color: var(--caret-color-hover);

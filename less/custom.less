@@ -1330,11 +1330,11 @@ section {
   #main > .list-container > .list {
     > table td:first-child,
     > table th:first-child {
-      padding-left: @container-padding;
+      padding-left: var(--table-first-last-th-padding);
     }
     > table td:last-child,
     > table th:last-child {
-      padding-right: @container-padding;
+      padding-right: var(--table-first-last-th-padding);
     }
   }
 
@@ -2213,11 +2213,11 @@ td > span.color-icon {
   #main > .list-container > .list > table {
     td:first-child,
     th:first-child {
-      padding-left: 10px;
+      padding-left: var(--table-first-last-th-padding);
     }
     td:last-child,
     th:last-child {
-      padding-right: 10px;
+      padding-right: var(--table-first-last-th-padding);
     }
   }
 }
@@ -3791,7 +3791,7 @@ table.table > tbody > tr > td > a[href^="mailto:"] {
 }
 
 th[data-name="r-checkbox"] {
-  width: var(--table-th-height);
+  width: var(--table-th-height)!important;
 }
 
 th[data-name="r-checkbox"]:hover .btn > .caret {

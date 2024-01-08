@@ -3,7 +3,7 @@
   "description": "This theme tries to achieve what the Hub Spot inspired theme did but without any major structual modifications.",
   "author": "Novastream AB",
   "acceptableVersions": [">=7.0.0"],
-  "version": "1.1.7",
+  "version": "1.1.8",
   "skipBackup": true,
   "checkVersionUrl": "https://novastream.se",
   "releaseDate": "2024-01-08"
