@@ -18220,7 +18220,7 @@ input.global-search-input {
   margin: 0;
 }
 .button-container {
-  padding: 0 0 10px;
+  padding: 10px 0px 10px 0px;
 }
 .margin.list-group-item:first-child {
   margin-top: 0;
@@ -20464,9 +20464,11 @@ a.close:hover {
 }
 .input-group-currency > .input-group-addon:last-child {
   flex-grow: 1;
-  display: block;
+  display: flex;
   min-width: fit-content;
   max-width: fit-content;
+  justify-content: center;
+  align-items: center;
 }
 body > .autocomplete-suggestions.text-search-suggestions > .autocomplete-suggestion {
   padding-top: 0;
