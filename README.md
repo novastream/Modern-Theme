@@ -1,7 +1,14 @@
 # Modern Theme
-Modern theme for EspoCRM 7.x (Both side and top menu supported)
+Modern theme for EspoCRM 8.x (Both side and top menu supported)
 
 This theme replaces the Hub Inspired Theme
+
+# Before reporting a issue
+- Make sure you've cleared Espos cache by running: php clear_cache.php or by clicking clear cache within the administration area
+- Logout and login again
+- Press CTRL + F5 to reload browser cache
+
+**Please do not hijack issues and please respect the closed issues**
 
 # Whats changed?
 - Only css is changed, no templates no javascript
@@ -27,14 +34,10 @@ This theme replaces the Hub Inspired Theme
 
 # Upgrading
 - Go to administration area of your Espo install
-- Select user interface and set a stock theme as active
-- Go to plugins and disable and uninstall Modern Theme
-- Do installation steps above
-
-# Before reporting a issue
-- Make sure you've cleared Espos cache by running: php clear_cache.php or by clicking clear cache within the administration area
-- Logout and login again
-- Press CTRL + F5 to reload browser cache
+- Go to plugins
+- Choose the file you created in the steps above (Installation)
+- Click upload
+- Done
 
 # Customization (optional)
 - Change all top nav icons to white
