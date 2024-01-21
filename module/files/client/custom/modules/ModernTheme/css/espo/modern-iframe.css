@@ -289,7 +289,7 @@
   --table-td-padding: 10px 24px 10px 24px;
   --table-active-bg: #f5f8fa;
   --table-active-border-color: #dfe3eb;
-  --table-first-last-th-padding: 12px;
+  --table-first-last-th-padding: 10px;
   --table-td-email-unread-font-weight: 600;
   --table-td-email-read-font-weight: 400;
   --navbar-inverse-hover-bg: #253342;
