@@ -15982,7 +15982,7 @@ body[data-navbar="side"] input.global-search-input:focus {
 }
 @media screen and (min-width: 768px) {
   body[data-navbar="side"] input.global-search-input {
-    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+    border-radius: var(--border-radius) !important;
   }
   body[data-navbar="side"] #global-search-panel {
     margin-top: 45px;
