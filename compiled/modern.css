@@ -19163,23 +19163,8 @@ label.attach-file-label > input.file {
   max-height: 37px;
   vertical-align: top;
 }
-.stick-sub {
-  position: fixed;
-  top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: -15px;
-  z-index: 5;
-}
 .stick-sub.button-container {
-  background-color: var(--navbar-bg);
-  padding: 3px 15px 0 15px;
-  width: 100%;
-}
-@media screen and (max-width: 767px) {
-  .stick-sub {
-    margin-top: 0;
-  }
+  margin-bottom: -55px;
 }
 .notifications-badge-container > .notifications-button > .number-badge {
   position: absolute;
@@ -20064,6 +20049,7 @@ table.table-admin-panel td {
   margin-bottom: 20px;
 }
 .admin-panel-iframe-container {
+  padding: 8px;
   height: 100%;
 }
 .admin-panel-iframe-container > h4 {
@@ -20753,7 +20739,6 @@ span.input-group-item {
   font-weight: 300;
 }
 .admin-content iframe {
-  box-shadow: var(--reset-shadows);
   background-color: var(--body-bg);
 }
 #login-form .btn-link {

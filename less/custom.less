@@ -2013,25 +2013,8 @@ label.attach-file-label {
   }
 }
 
-.stick-sub {
-  position: fixed;
-  top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: -@container-padding;
-  z-index: 5;
-}
-
 .stick-sub.button-container {
-  background-color: var(--navbar-bg);
-  padding: 3px @container-padding 0 @container-padding;
-  width: 100%;
-}
-
-@media screen and (max-width: (@screen-sm-min - 1px)) {
-  .stick-sub {
-    margin-top: 0;
-  }
+  margin-bottom: -55px;
 }
 
 .notifications-badge-container > .notifications-button > .number-badge {
@@ -3061,7 +3044,8 @@ table.table-admin-panel {
       font-weight: 600;
     }
   }
-
+  
+  padding: 8px;
   height: 100%;
 }
 
@@ -3942,7 +3926,6 @@ span.input-group-item {
 
 // admin iframe
 .admin-content iframe {
-  box-shadow: var(--reset-shadows);
   background-color: var(--body-bg);
 }
 
