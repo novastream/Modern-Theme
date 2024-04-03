@@ -403,11 +403,6 @@ body[data-navbar="side"] {
                     z-index: 2000;
                 }
             }
-
-            .stick-sub,
-            .sticked-bar {
-                visibility: hidden;
-            }
         }
     }
 
@@ -691,43 +686,15 @@ body[data-navbar="side"] {
         }
     }
 
-
-    @media (min-width: @screen-sm-min) {
-        .stick-sub.button-container {
-            width: calc(~"100% - " @navbar-width);
-        }
-
-        &.minimized .stick-sub.button-container {
-            width: calc(~"100% - " @navbar-minimized-width);
-        }
-    }
-
-    .stick-sub {
-        left: @navbar-width;
-    }
-
-    &.minimized .stick-sub {
-        left: @navbar-minimized-width;
-    }
-
     .list-buttons-container .sticked-bar {
-        width: calc(~"100% - " @navbar-width);
-        left: @navbar-width;
-        top: @tob-bar-height;
+        width: 100%;
+        left: 0;
+        top: @navbar-height;
         padding-left: @container-padding;
-    }
-
-    &.minimized .list-buttons-container .sticked-bar {
-        width: calc(~"100% - " @navbar-minimized-width);
-        left: @navbar-minimized-width;
+        display: none;
     }
 
     @media screen and (max-width: (@screen-sm-min - 1px)) {
-        .stick-sub,
-        &.minimized .stick-sub {
-            left: 0;
-        }
-
         .list-buttons-container .sticked-bar,
         &.minimized .list-buttons-container .sticked-bar {
             width: 100%;
@@ -856,8 +823,6 @@ body[data-navbar="side"] {
     }
 
     .stick-sub {
-        margin-top: @tob-bar-height;
-
         @media screen and (max-width: (@screen-sm-min - 1px)) {
             margin-top: 0;
         }
