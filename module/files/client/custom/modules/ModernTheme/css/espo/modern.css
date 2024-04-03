@@ -3274,6 +3274,7 @@ tbody.collapse.in {
   margin: 9.5px 0;
   overflow: hidden;
   background-color: var(--dropdown-divider-bg);
+  margin: 3px;
 }
 .dropdown-menu > li > a {
   display: block;
@@ -3738,6 +3739,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 9.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+  margin: 3px;
 }
 .nav > li > a > img {
   max-width: none;
@@ -7117,6 +7119,7 @@ button.close {
   margin: 9.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+  margin: 3px;
   margin-left: -10px;
   margin-right: -10px;
 }
