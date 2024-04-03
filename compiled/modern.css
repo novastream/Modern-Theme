@@ -18337,7 +18337,7 @@ input.global-search-input {
   text-align: center;
 }
 .list-container .pagination a.pagination-btn-middle {
-  min-width: 130px;
+  min-width: 80px;
   text-align: center;
 }
 .list-bottom-bar {
@@ -20905,6 +20905,19 @@ th.fc-sun {
 }
 .link-container > .list-group-item .link-item-column > .selectize-control {
   width: 100%;
+}
+.pagination {
+  float: right;
+  display: block;
+  margin: 0;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  background-color: transparent;
 }
 input[type="radio"],
 input[type="checkbox"] {
