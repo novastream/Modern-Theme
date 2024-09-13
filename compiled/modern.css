@@ -19163,8 +19163,8 @@ label.attach-file-label > input.file {
   max-height: 37px;
   vertical-align: top;
 }
-.stick-sub.button-container {
-  margin-bottom: -55px;
+.record .detail > div[style*="height: 55px"] {
+  display: none!important;
 }
 .notifications-badge-container > .notifications-button > .number-badge {
   position: absolute;
