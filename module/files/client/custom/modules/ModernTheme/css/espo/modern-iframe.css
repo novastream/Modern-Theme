@@ -143,7 +143,8 @@
   --navbar-link-hover-bg: #f5f8fa;
   --navbar-link-active-bg: #bde6ed;
   --navbar-box-shadow: none;
-  --navbar-inverse-color: #33475b;
+  --navbar-border-width: 0;
+  --navbar-inverse-color: #ffffff;
   --navbar-inverse-bg: #2e3f50;
   --navbar-inverse-link-color: #ffffff;
   --navbar-inverse-link-active-bg: #1b2530;
