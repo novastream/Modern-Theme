@@ -17104,6 +17104,7 @@ body .panel-primary > .panel-heading .btn-group.open .dropdown-toggle.btn:focus 
   cursor: default;
   overflow: auto;
   padding: 5px 0;
+  user-select: none;
 }
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
   background-color: var(--dropdown-link-hover-bg) !important;
@@ -17114,20 +17115,20 @@ body .panel-primary > .panel-heading .btn-group.open .dropdown-toggle.btn:focus 
   color: var(--brand-primary);
 }
 .autocomplete-suggestions .autocomplete-suggestion {
-  padding: 4px 5px;
+  padding: 4px 10px;
   white-space: nowrap;
   overflow: hidden;
 }
 .popover,
 .dropdown-menu,
 .selectize-dropdown,
+.selectize-dropdown.form-control,
 .autocomplete-suggestions,
 .ui-timepicker-wrapper {
   border: var(--dropdown-border-width) solid var(--dropdown-border);
   box-shadow: var(--dropdown-box-shadow);
   border-radius: var(--dropdown-border-radius);
   border-width: var(--dropdown-border-width);
-  text-transform: none;
 }
 .popover {
   background-color: var(--dropdown-bg);
@@ -17159,8 +17160,14 @@ ul.dropdown-menu > li.checkbox {
   -ms-user-select: none;
   user-select: none;
 }
-ul.dropdown-menu > li.divider + li.divider {
-  display: none;
+ul.dropdown-menu > li.checkbox label {
+  padding-left: 23px;
+}
+ul.dropdown-menu > li.checkbox label input[type="checkbox"].form-checkbox {
+  margin-left: -23px;
+}
+ul.dropdown-menu > li.checkbox label input[type="checkbox"].form-checkbox.form-checkbox-small {
+  margin-top: 3px;
 }
 ul.dropdown-menu > li > a {
   padding-top: 4px;
@@ -17177,10 +17184,19 @@ ul.dropdown-menu > li > a.active {
   outline: 0;
 }
 ul.dropdown-menu > li > a > .check-icon + div {
-  padding-right: 20px;
+  padding-right: 26px;
+}
+ul.dropdown-menu > li > a span.fa-check {
+  padding-top: 2px;
+}
+ul.dropdown-menu > li > a.disabled {
+  color: var(--text-muted-color);
 }
 ul.dropdown-menu > li.checkbox:last-child {
   margin-bottom: 3px;
+}
+ul.dropdown-menu > .dropdown-header {
+  user-select: none;
 }
 ul.dropdown-menu-with-icons > li a {
   padding-left: 10px;
@@ -17210,6 +17226,71 @@ ul.dropdown-menu-with-icons > li .item-text {
 .btn.dropdown-toggle > span.caret.wide {
   margin-left: 2px;
   margin-right: 2px;
+}
+.fix-overflow .btn-group {
+  position: unset;
+}
+.dropdown-menu .quick-search-list-item input {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+ul.dropdown-menu > li.divider + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:not(.hidden) + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:not(.hidden) + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:not(.hidden) + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:not(.hidden) + li.hidden + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:not(.hidden) + li.hidden + li.hidden + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:not(.hidden) + li.hidden + li.hidden + li.hidden + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.hidden:first-child + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.hidden:first-child + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.hidden:first-child + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.hidden:first-child + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.hidden:first-child + li.hidden + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.hidden:first-child + li.hidden + li.hidden + li.hidden + li.hidden + li.hidden + li.divider {
+  display: none;
+}
+ul.dropdown-menu > li.divider:has(+ li.hidden:last-child) {
+  display: none;
+}
+ul.dropdown-menu > li.divider:has(+ li.hidden + li.hidden:last-child) {
+  display: none;
+}
+ul.dropdown-menu > li.divider:has(+ li.hidden + li.hidden + li.hidden:last-child) {
+  display: none;
+}
+ul.dropdown-menu > li.divider:has(+ li.hidden + li.hidden + li.hidden + li.hidden:last-child) {
+  display: none;
+}
+ul.dropdown-menu > li.divider:has(+ li.hidden + li.hidden + li.hidden + li.hidden + li.hidden:last-child) {
+  display: none;
+}
+ul.dropdown-menu > li.divider:has(+ li.hidden + li.hidden + li.hidden + li.hidden + li.hidden + li.hidden:last-child) {
+  display: none;
 }
 .form-control {
   border-radius: var(--border-radius);
