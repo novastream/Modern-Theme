@@ -18236,6 +18236,10 @@ div.list-kanban > div > table .item.ui-sortable-helper {
 }
 .filter .selectize-input {
   min-height: 30px;
+  background-color: var(--white-color);
+}
+.filter .selectize-input.input-active {
+  background-color: var(--white-color) !important;
 }
 .btn.active {
   box-shadow: none;
@@ -18478,6 +18482,7 @@ input.global-search-input {
 .filter > .form-group .field .input-group input {
   font-size: 12px;
   height: 30px;
+  background-color: var(--white-color);
 }
 .filter > .form-group .field .input-group button.btn {
   font-size: 12px;
