@@ -21173,7 +21173,7 @@ div.list-kanban > div > table th.group-header > div {
   line-height: 28px;
   height: 100%;
   background-color: var(--label-default-bg);
-  border-radius: var(--border-radius);
+  border-radius: 0px;
 }
 div.list-kanban > div > table th.group-header > div .create-button {
   float: right;
@@ -21289,6 +21289,12 @@ div.list-kanban > div > table .item .panel .form-group .field {
 div.list-kanban > div > table .item .panel .form-group .field.field-large {
   font-size: 18px;
   color: var(--gray);
+}
+div.list-kanban > div > table .item .panel .form-group .field.field-large.text-muted {
+  color: var(--text-muted-color);
+}
+div.list-kanban > div > table .item .panel .form-group .field.text-muted > a {
+  color: var(--text-muted-color);
 }
 div.list-kanban > div > table .item .panel div:last-child > .form-group {
   margin-bottom: 0;
