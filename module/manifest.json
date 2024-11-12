@@ -2,9 +2,9 @@
   "name": "Modern Theme",
   "description": "This theme tries to achieve what the Hub Spot inspired theme did but without any major structual modifications.",
   "author": "Novastream AB",
-  "acceptableVersions": [">=8.0.0"],
-  "version": "1.2.5",
+  "acceptableVersions": [">=8.4.2"],
+  "version": "1.2.6",
   "skipBackup": true,
   "checkVersionUrl": "https://novastream.se",
-  "releaseDate": "2024-10-30"
+  "releaseDate": "2024-11-12"
 }

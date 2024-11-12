@@ -17979,12 +17979,6 @@ div.list-kanban > div > table {
   width: 100%;
   table-layout: fixed;
   user-select: none;
-  /*th:last-child {
-        > div:before,
-        > div:after {
-            border-color: transparent transparent transparent transparent !important;
-        }
-    }*/
 }
 div.list-kanban > div > table th.group-header {
   font-weight: normal;
@@ -17994,14 +17988,8 @@ div.list-kanban > div > table th.group-header {
   margin: 0;
   overflow: hidden;
 }
-div.list-kanban > div > table th.group-header:first-child > div {
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
 div.list-kanban > div > table th.group-header:last-child > div {
   width: 100%;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
 }
 div.list-kanban > div > table th.group-header:last-child > div:before,
 div.list-kanban > div > table th.group-header:last-child > div:after {
@@ -18016,8 +18004,9 @@ div.list-kanban > div > table th.group-header > div {
   position: relative;
   line-height: 28px;
   height: 100%;
-  width: calc(100% - 7px);
+  width: 100%;
   background-color: var(--label-default-bg);
+  border-radius: var(--border-radius) !important;
 }
 div.list-kanban > div > table th.group-header > div .create-button {
   float: right;
@@ -18029,74 +18018,20 @@ div.list-kanban > div > table th.group-header > div .create-button:hover,
 div.list-kanban > div > table th.group-header > div .create-button:active {
   color: var(--text-white-color);
 }
-div.list-kanban > div > table th.group-header > div:before,
-div.list-kanban > div > table th.group-header > div:after {
-  content: " ";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top-width: 14px;
-  border-left-width: 15px;
-  border-bottom-width: 14px;
-  border-right-width: 0;
-  border-color: var(--label-default-bg);
-  border-style: solid;
-  position: absolute;
-}
-div.list-kanban > div > table th.group-header > div:before {
-  left: calc(100%);
-  z-index: 2;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-}
-div.list-kanban > div > table th.group-header > div:after {
-  border-left-color: transparent;
-  left: calc(100% + 2px);
-}
 div.list-kanban > div > table th.group-header.group-header-success > div {
   background-color: var(--brand-success);
-}
-div.list-kanban > div > table th.group-header.group-header-success > div:before {
-  border-left-color: var(--brand-success);
-}
-div.list-kanban > div > table th.group-header.group-header-before-success > div:after {
-  border-color: var(--brand-success) var(--brand-success) var(--brand-success) transparent;
 }
 div.list-kanban > div > table th.group-header.group-header-danger > div {
   background-color: var(--brand-danger);
 }
-div.list-kanban > div > table th.group-header.group-header-danger > div:before {
-  border-left-color: var(--brand-danger);
-}
-div.list-kanban > div > table th.group-header.group-header-before-danger > div:after {
-  border-color: var(--brand-danger) var(--brand-danger) var(--brand-danger) transparent;
-}
 div.list-kanban > div > table th.group-header.group-header-warning > div {
   background-color: var(--brand-warning);
-}
-div.list-kanban > div > table th.group-header.group-header-warning > div:before {
-  border-left-color: var(--brand-warning);
-}
-div.list-kanban > div > table th.group-header.group-header-before-warning > div:after {
-  border-color: var(--brand-warning) var(--brand-warning) var(--brand-warning) transparent;
 }
 div.list-kanban > div > table th.group-header.group-header-primary > div {
   background-color: var(--brand-primary);
 }
-div.list-kanban > div > table th.group-header.group-header-primary > div:before {
-  border-left-color: var(--brand-primary);
-}
-div.list-kanban > div > table th.group-header.group-header-before-primary > div:after {
-  border-color: var(--brand-primary) var(--brand-primary) var(--brand-primary) transparent;
-}
 div.list-kanban > div > table th.group-header.group-header-info > div {
   background-color: var(--brand-info);
-}
-div.list-kanban > div > table th.group-header.group-header-info > div:before {
-  border-left-color: var(--brand-info);
-}
-div.list-kanban > div > table th.group-header.group-header-before-info > div:after {
-  border-color: var(--brand-info) var(--brand-info) var(--brand-info) transparent;
 }
 div.list-kanban > div > table td.group-column {
   vertical-align: top;
@@ -18184,9 +18119,6 @@ div.list-kanban > div > table .item.ui-sortable-helper {
 .list-kanban .kanban-head-placeholder {
   height: 28px;
 }
-.list-kanban .kanban-head-container {
-  box-shadow: var(--default-box-shadow);
-}
 .list-kanban .kanban-head-container.sticked {
   position: fixed;
   top: 0;
@@ -18258,6 +18190,7 @@ div.list-kanban > div > table .item.ui-sortable-helper {
     overflow: visible;
     min-width: 0;
     max-height: 28px;
+    border-radius: var(--border-radius);
   }
   div.list-kanban > div.kanban-head-container > table > thead tr.kanban-row > th .kanban-group-label {
     display: inline-block;
@@ -18268,14 +18201,6 @@ div.list-kanban > div > table .item.ui-sortable-helper {
   }
   div.list-kanban > div.kanban-head-container > table > thead tr.kanban-row > th:hover .kanban-group-label {
     max-width: calc(100% - 30px);
-  }
-  div.list-kanban > div.kanban-head-container > table > thead tr.kanban-row > th:first-child {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-  }
-  div.list-kanban > div.kanban-head-container > table > thead tr.kanban-row > th:last-child {
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
   }
 }
 @media screen and (min-width: 768px) and (hover: hover) {
