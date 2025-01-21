@@ -20849,7 +20849,7 @@ table.table td.cell .html-container {
   }
   .folders-container.sticked {
     position: fixed;
-    margin-left: 0;
+    top: 65px;
     overflow: hidden;
   }
   .folders-container.sticked .list-group-side {
