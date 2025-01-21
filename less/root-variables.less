@@ -1,4 +1,178 @@
 :root {
+
+  --1px: 1px;
+  --2px: 2px;
+  --3px: 3px;
+  --4px: 4px;
+  --5px: 5px;
+  --6px: 6px;
+  --7px: 7px;
+  --8px: 8px;
+  --9px: 9px;
+  --10px: 10px;
+  --11px: 11px;
+  --12px: 12px;
+  --13px: 13px;
+  --14px: 14px;
+  --15px: 15px;
+  --16px: 16px;
+  --17px: 17px;
+  --18px: 18px;
+  --19px: 19px;
+  --20px: 20px;
+  --21px: 21px;
+  --22px: 22px;
+  --23px: 23px;
+  --24px: 24px;
+  --25px: 25px;
+  --26px: 26px;
+  --27px: 27px;
+  --28px: 28px;
+  --29px: 29px;
+  --30px: 30px;
+  --31px: 31px;
+  --32px: 32px;
+  --33px: 33px;
+  --34px: 34px;
+  --35px: 35px;
+  --36px: 36px;
+  --37px: 37px;
+  --38px: 38px;
+  --39px: 39px;
+  --40px: 40px;
+  --42px: 42px;
+  --43px: 43px;
+  --46px: 46px;
+  --48px: 48px;
+  --50px: 50px;
+  --54px: 54px;
+  --65px: 65px;
+  --70px: 70px;
+  --76px: 76px;
+  --80px: 80px;
+  --90px: 90px;
+  --94px: 94px;
+  --95px: 95px;
+  --100px: 100px;
+  --120px: 120px;
+  --128px: 128px;
+  --150px: 150px;
+  --164px: 164px;
+  --168px: 168px;
+  --180px: 180px;
+  --190px: 190px;
+  --200px: 200px;
+  --220px: 220px;
+  --232px: 232px;
+  --240px: 240px;
+  --246px: 246px;
+  --256px: 256px;
+  --260px: 260px;
+  --300px: 300px;
+  --340px: 340px;
+  --400px: 400px;
+  --500px: 500px;
+  --512px: 512px;
+  --550px: 550px;
+  --600px: 600px;
+  --640px: 640px;
+  --740px: 740px;
+  --900px: 900px;
+  --1300px: 1300px;
+  --1440px: 1440px;
+
+  --font-size-base: var(--14px);
+  --font-size-large: var(--18px);
+  --font-size-small: var(--12px);
+
+  --line-height-base: 1.571429;
+  --line-height-large: 1.3333333;
+  --line-height-small: 1.5;
+
+  --line-height-computed: var(--22px);
+
+  --table-cell-padding: var(--8px);
+  --table-cell-less-padding: var(--3px);
+
+  --container-max-width: var(--1440px);
+
+  //Also set in a CSS variable.
+  --navbar-width: var(--232px);
+  --navbar-minimized-width: var(--50px);
+
+  --navbar-height: var(--40px);
+  --navbar-header-height: var(--65px);
+  --navbar-tab-vertical-padding: var(--9px);
+  --navbar-tab-left-padding: var(--16px);
+  --navbar-tab-right-padding: var(--20px);
+  --navbar-tab-text-left-padding: var(--36px);
+
+  --top-bar-height: var(--32px);
+  --logo-width: var(--164px);
+  --footer-height: var(--26px);
+
+  --grid-gutter-width: var(--16px);
+
+  --container-padding: var(--15px);
+
+  --panel-padding: var(--14px);
+
+  --form-group-margin-bottom: var(--12px);
+
+  --padding-base-vertical: var(--6px);
+  --padding-base-horizontal: var(--10px);
+  --padding-small-vertical: var(--5px);
+  --padding-small-horizontal: var(--10px);
+  --padding-large-vertical: var(--10px);
+  --padding-large-horizontal: var(--16px);
+
+  --modal-inner-padding: var(--panel-padding);
+  --modal-title-padding: var(--padding-base-horizontal);
+  --modal-title-line-height: var(--27px);
+
+  --popover-arrow-width: var(--10px);
+
+  // @todo Compute by adding font-size, two vertical paddings and two borders?
+  --input-height-base: var(--36px);
+  --input-height-small: var(--30px);
+  --input-height-large: var(--46px);
+
+  --grid-column-width-xxsmall: var(--100px);
+  --grid-column-width-xsmall: var(--190px);
+  --grid-column-width-small: var(--246px);
+  --grid-column-width-medium: var(--340px);
+
+  --record-grid-max-width: var(--1300px);
+
+  // computed
+  --popover-arrow-width-negative: calc(var(--popover-arrow-width) * -1);
+  --popover-arrow-outer-width: calc(var(--popover-arrow-width) + var(--1px));
+  --popover-arrow-outer-width-negative: calc(var(--popover-arrow-outer-width) * -1);
+
+  --navbar-padding-vertical: calc((var(--navbar-height) - var(--line-height-computed)) / 2);
+  --line-height-computed-half: calc(var(--line-height-computed) / 2);
+  --table-cell-padding-half: calc(var(--table-cell-padding) / 2);
+  --grid-gutter-width-half: calc(var(--grid-gutter-width) / 2);
+
+  --minus-1px: calc(var(--1px) * -1);
+  --minus-2px: calc(var(--2px) * -1);
+  --minus-3px: calc(var(--3px) * -1);
+  --minus-4px: calc(var(--4px) * -1);
+  --minus-5px: calc(var(--5px) * -1);
+  --minus-6px: calc(var(--6px) * -1);
+  --minus-7px: calc(var(--7px) * -1);
+  --minus-8px: calc(var(--8px) * -1);
+  --minus-9px: calc(var(--9px) * -1);
+  --minus-10px: calc(var(--10px) * -1);
+  --minus-11px: calc(var(--11px) * -1);
+  --minus-12px: calc(var(--12px) * -1);
+  --minus-13px: calc(var(--13px) * -1);
+  --minus-14px: calc(var(--14px) * -1);
+  --minus-15px: calc(var(--15px) * -1);
+  --minus-16px: calc(var(--16px) * -1);
+
+  // color and style
+  
   --body-bg: @body-bg-value;
   --panel-bg: @panel-bg-value;
   --main-gray: @main-gray-value;

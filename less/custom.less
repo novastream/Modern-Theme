@@ -1645,6 +1645,7 @@ table.less-padding td.cell[data-name="buttons"] > .btn-group {
       height: 100%;
       .dashlet-body {
         height: ~"calc(100% - var(--panel-heading-height))";
+        width: 100%;
       }
     }
     .grid-stack-item-content {
@@ -2154,6 +2155,72 @@ td > span.color-icon {
   color: @brand-danger;
 }
 
+.name-avatar {
+  > .avatar {
+      margin-left: var(--1px);
+      margin-right: var(--2px);
+  }
+}
+
+div:has(.avatar-in-input):not(:has(.being-typed)) {
+  > .input-group > input {
+      padding-left: var(--33px);
+  }
+
+  > .avatar-in-input {
+      display: inline-block;
+      position: absolute;
+      top: var(--11px);
+      left: var(--10px);
+      z-index: 3;
+      user-select: none;
+      pointer-events: none;
+  }
+}
+
+div:has(.avatar-in-input) {
+  > .avatar-in-input {
+      display: none;
+  }
+}
+
+.email-address-detail-item {
+  > img.avatar {
+      margin-right: var(--5px);
+  }
+}
+
+div.field,
+.link-container > .list-group-item,
+.link-multiple-item {
+    > img.avatar-link,
+    > div > img.avatar-link {
+        margin-right: var(--7px);
+    }
+}
+
+.expanded-row {
+    .cell {
+        img.avatar-link {
+            margin-right: var(--5px);
+        }
+    }
+}
+
+.textcomplete-item {
+    > a {
+        img.avatar {
+            margin-right: 5px;
+        }
+    }
+}
+
+td.cell {
+    > img.avatar-link {
+        margin-right: var(--6px);
+    }
+}
+
 img.avatar.avatar-link {
   display: inline-block;
   margin-top: 0;
@@ -2168,7 +2235,7 @@ img.avatar.avatar-link {
   }
 }
 
-stream-head-text-container .span {
+.stream-head-text-container .span {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -2579,6 +2646,105 @@ table.table td.cell .html-container {
 
     overflow: hidden;
   }
+}
+
+.list-group-side {
+  border: 0;
+
+  > li {
+      border: 0;
+      padding: var(--5px) var(--4px) var(--5px) calc(var(--container-padding) - var(--3px));
+      border-left: var(--3px) solid transparent;
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+
+      @media screen and (min-width: @screen-sm-min) {
+          &.group-start {
+              margin-top: var(--10px);
+          }
+      }
+
+      &.selected {
+          border-color: var(--brand-danger);
+
+          .item-icon-container {
+              color: var(--brand-danger);
+          }
+
+          .cell {
+              padding: var(--2px) 0;
+          }
+
+          a {
+              &.side-link,
+              &:hover.side-link,
+              &:active.side-link,
+              &:visited.side-link,
+              &:focus.side-link {
+                  color: var(--brand-danger);
+                  font-weight: 600;
+              }
+          }
+      }
+
+      &.droppable {
+          &.active {
+              &:not(.success) {
+                  border-left-color: var(--brand-warning);
+              }
+              background-color: var(--state-warning-bg);
+          }
+          &.success {
+              background-color: transparent;
+              transition: 900ms linear background-color;
+          }
+      }
+
+      > a {
+          &,
+          &:hover {
+              color: var(--btn-text-color);
+          }
+      }
+
+      .item-icon-container {
+          display: inline-block;
+          width: var(--18px);
+          margin-left: var(--minus-2px);
+          margin-right: var(--8px);
+          text-align: center;
+
+          > span {
+              font-size: var(--12px);
+              position: relative;
+              top: var(--minus-1px);
+          }
+      }
+  }
+}
+
+.list-group-side a:hover,
+.list-group-side a:focus,
+.list-group-tree a:hover,
+.list-group-tree a:focus {
+    text-decoration: none;
+}
+
+.email-address-create-dropdown .btn {
+    position: relative;
+    top: var(--minus-2px);
+    padding: 0 var(--4px);
+    //noinspection CssReplaceWithShorthandSafely
+    margin: 0;
+    //noinspection CssOverwrittenProperties,CssReplaceWithShorthandSafely
+    margin-bottom: 0;
+    border: 0;
+    line-height: 1.3;
+}
+
+.email-address-create-dropdown + .email-address-line {
+    display: block;
+    width: calc(100% - var(--17px));
 }
 
 #main > .calendar-container {
