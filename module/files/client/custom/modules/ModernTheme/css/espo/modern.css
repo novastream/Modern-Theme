@@ -21015,6 +21015,14 @@ table.table td.cell .html-container {
 .inline-cancel-link {
   margin-left: 8px;
 }
+.cell .inline-cancel-link {
+  float: right;
+  margin-left: var(--26px);
+}
+.cell .inline-save-link {
+  float: right;
+  margin-left: var(--8px);
+}
 .panel .item-container.ui-sortable-helper {
   background-color: var(--panel-bg);
 }
