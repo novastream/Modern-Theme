@@ -1448,7 +1448,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Source Code Pro", monospace;
 }
 code {
   padding: 2px 4px;
@@ -6336,6 +6336,10 @@ button.close {
   --900px: 900px;
   --1300px: 1300px;
   --1440px: 1440px;
+  --font-family: "Lexend Deca", sans-serif;
+  --font-family-base: "Lexend Deca", sans-serif;
+  --font-family-sans-serif: "Lexend Deca", sans-serif;
+  --font-family-monospace: "Source Code Pro", monospace;
   --font-size-base: var(--14px);
   --font-size-large: var(--18px);
   --font-size-small: var(--12px);
@@ -15846,6 +15850,14 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover {
   font-weight: 900;
   src: local("Lexend Deca Black"), local("LexendDeca-Black"), url("../../fonts/lexenddeca/LexendDeca-Black.ttf") format("truetype");
 }
+/* source sans pro-400 */
+@font-face {
+  font-family: "Source Code Pro";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Code Pro Regular"), local("SourceCodePro-Regular"), url("../../fonts/sourcecodepro/SourceCodePro-Regular.ttf") format("truetype");
+}
 body:not([data-navbar="side"]) {
   padding-top: 52px;
   height: 100%;
@@ -18377,16 +18389,9 @@ select.form-control {
   border: var(--input-border-width) solid var(--input-border);
   border-width: var(--input-border-width);
   border-radius: var(--border-radius);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: all border-color ease-in-out .15s, box-shadow ease-in-out .15s ease-out;
 }
 .note-editor.note-frame.in-focus {
-  border-color: var(--input-border-focus);
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px var(--input-border-focus-rgba);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px var(--input-border-focus-rgba);
 }
 .input-group > .input-group-btn:not(:first-child) > .btn:first-child {
   border-top-left-radius: 0 !important;
@@ -18679,6 +18684,87 @@ table.table tr:hover {
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
   background-color: var(--table-active-bg);
+}
+body .alert {
+  padding: var(--10px) var(--15px);
+  border-radius: var(--border-radius);
+}
+body .alert .message {
+  word-break: break-word;
+}
+body > .alert {
+  padding: var(--5px) var(--18px);
+  min-height: var(--30px);
+  max-width: var(--400px);
+  height: auto;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--dropdown-box-shadow);
+}
+body > .alert.alert-closable .message {
+  width: calc(100% - var(--16px));
+  float: left;
+}
+body > .alert .close-container {
+  width: var(--16px);
+  height: var(--16px);
+  float: right;
+}
+body > .alert .close-container .close {
+  right: var(--minus-11px);
+  top: var(--minus-1px);
+  position: relative;
+  color: inherit;
+  text-shadow: none;
+  opacity: 1;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  float: none;
+}
+body > .alert .close-container .close:hover {
+  opacity: 0.7;
+}
+body > .alert .close-container .close > span {
+  line-height: var(--16px);
+}
+.fas,
+.far,
+.fa {
+  font-size: var(--16px);
+  line-height: var(--21px);
+}
+.btn .fas,
+.btn .far {
+  line-height: var(--line-height-computed);
+}
+.btn .fas.fa-sm,
+.btn .far.fa-sm {
+  line-height: var(--18px);
+}
+.fas.fa-sm,
+.far.fa-sm,
+.btn-sm .fas,
+.btn-sm .far,
+.small .far,
+.small .fas,
+.fas.small,
+.far.small {
+  font-size: var(--12px);
+  line-height: var(--18px);
+}
+.btn:not(.btn-sm) > .fas.fa-ellipsis-h,
+ul.nav.tabs > li > a > .fas.fa-ellipsis-h {
+  vertical-align: middle;
+}
+.btn-sm > .fa-ellipsis-h,
+.btn-sm > .fa-plus {
+  font-size: var(--14px);
+}
+.icon-is-replied {
+  transform: scaleX(-1);
+}
+.icon-is-replied::before {
+  content: "\f064";
 }
 html {
   height: 100%;
@@ -20043,7 +20129,7 @@ table.less-padding td.cell[data-name="buttons"] > .btn-group {
 }
 .panel.note-editor .note-toolbar {
   border-bottom: 0 !important;
-  background-color: var(--panel-default-heading-bg);
+  background-color: var(--panel-default-heading-bg) !important;
 }
 .panel.note-editor .note-toolbar > .btn-group {
   margin-bottom: 5px;
@@ -21743,6 +21829,48 @@ body > .autocomplete-suggestions.text-search-suggestions > .autocomplete-suggest
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+.colorpicker .colorpicker-saturation {
+  width: var(--200px);
+  height: var(--200px);
+}
+.colorpicker .colorpicker-hue,
+.colorpicker .colorpicker-alpha {
+  height: var(--200px);
+}
+.colorpicker .colorpicker-color {
+  width: var(--200px);
+}
+.colorpicker-element .input-group-addon i {
+  display: block;
+  border-radius: var(--border-radius-small);
+}
+.panel > .panel-body .list-container[data-role="pinned"] > .list .list-group > .list-group-item:not(.active) {
+  background-color: var(--warning-bg);
+}
+.panel > .panel-body .list-container[data-role="pinned"] > .list .list-group > .list-group-item:first-child {
+  border-top-width: var(--1px);
+  border-top-color: var(--default-border-color);
+}
+.avatar-field-color {
+  margin-top: var(--3px);
+}
+.ace-tm {
+  font-variant-ligatures: none;
+}
+.ace-tm .ace_content {
+  font-variant-ligatures: none;
+}
+.formula-edit-container:has( > :last-child:nth-child(2)) {
+  clear: both;
+}
+.formula-edit-container:has( > :last-child:nth-child(2)) > div:first-child {
+  float: left;
+  width: calc(100% - var(--70px));
+}
+.formula-edit-container:has( > :last-child:nth-child(2)) > div:last-child {
+  float: right;
+  width: var(--70px);
+}
 body .modal-dialog .panel-default.headered,
 body .modal-dialog .panel {
   border-radius: var(--reset-border-radius);
@@ -22421,6 +22549,124 @@ div.list-kanban > div > table .item.ui-sortable-helper a {
   .list-kanban .item.ui-sortable-helper .item-menu-container .dropdown-toggle {
     visibility: hidden;
   }
+}
+.wysiwyg-iframe-container.fallback {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--white-color);
+}
+.note-editable blockquote {
+  font-size: var(--font-size-base);
+}
+.note-editor .note-toolbar.sticked {
+  z-index: 1;
+  position: fixed;
+  background-color: var(--panel-bg);
+}
+.note-editor.panel > .panel-heading .btn {
+  padding-top: var(--4px);
+  padding-bottom: var(--4px);
+}
+.note-editor.panel > .panel-heading .dropdown-menu .btn-group > .btn > i {
+  top: var(--1px);
+  position: relative;
+}
+.note-editor .note-editing-area ul,
+.note-editor .note-editing-area ol {
+  margin-top: var(--line-height-computed-half);
+  margin-bottom: var(--line-height-computed-half);
+}
+.note-editor .note-editing-area ul:first-child,
+.note-editor .note-editing-area ol:first-child {
+  margin-top: 0;
+}
+.note-editor .note-editing-area ul:last-child,
+.note-editor .note-editing-area ol:last-child {
+  margin-bottom: 0;
+}
+.panel.note-editor {
+  margin-bottom: 0;
+}
+.panel.note-editor .note-toolbar {
+  border-bottom: 0 !important;
+  background-color: transparent;
+}
+.panel.note-editor .note-toolbar > .btn-group {
+  margin-bottom: var(--5px);
+}
+.panel.note-editor .note-toolbar > .btn-group .btn {
+  margin-bottom: 0;
+  height: var(--input-height-small);
+}
+.panel.note-editor.panel-default > .panel-heading .btn-default {
+  background-color: var(--btn-default-bg) !important;
+  border-color: var(--btn-default-border) !important;
+}
+.panel.note-editor .panel-heading {
+  padding: var(--5px) var(--5px) 0 var(--5px);
+  min-height: calc(var(--30px)+var(--10px));
+}
+.panel.note-editor .note-editable {
+  min-height: var(--39px);
+}
+.panel.note-editor .note-editable table.bordered,
+.panel.note-editor .note-editable table.bordered th,
+.panel.note-editor .note-editable table.bordered td {
+  border: var(--1px) solid;
+}
+.panel.note-editor.note-frame .note-editing-area .note-editable {
+  background-color: var(--input-bg);
+  color: var(--input-color);
+}
+.panel.note-editor.note-frame .note-editing-area .note-editable[contenteditable="false"] {
+  background-color: var(--text-color);
+}
+.panel.note-editor.note-frame .note-statusbar {
+  background-color: var(--input-bg);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  height: var(--8px);
+}
+.panel.note-editor.note-frame output.note-status-output {
+  padding-top: 0;
+}
+body .note-editor .panel-heading > .btn-group {
+  right: 0;
+  top: 0;
+}
+body .note-editor .panel-heading > .btn-group > .btn > i,
+body .note-editor .panel-heading > .btn-group > .btn > span {
+  position: relative;
+  top: var(--1px);
+}
+body .note-editor .panel-heading > .btn-group > .btn-group > .btn > i,
+body .note-editor .panel-heading > .btn-group > .btn-group > .btn > span {
+  position: relative;
+  top: var(--1px);
+}
+body .note-editor.codeview textarea.note-codable {
+  min-height: var(--400px);
+}
+body .note-editor .note-statusbar.locked .note-resizebar {
+  display: none;
+}
+.note-editor + .show-quote-button,
+.wysiwyg-iframe-container + .show-quote-button {
+  padding: var(--1px) var(--4px);
+  height: var(--14px);
+  line-height: var(--4px);
+  width: var(--26px);
+}
+.note-editor + .show-quote-button {
+  position: relative;
+  top: calc(var(--27px) * -1);
+  left: var(--10px);
+}
+.note-editor.codeview + .show-quote-button {
+  display: none;
+}
+.note-editor:has(+ .show-quote-button):not(.codeview) .note-editable {
+  padding-bottom: var(--26px);
 }
 .margin {
   margin: 8px 0;
@@ -23414,6 +23660,25 @@ fieldset[disabled] .btn-info:hover {
   .grid-auto-fit-sm {
     grid-template-columns: repeat(auto-fit, minmax(246px, 1fr));
   }
+}
+.animation-spin-fast {
+  animation: fa-spin 0.5s infinite linear;
+}
+@keyframes animation-spin-fast {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .clearfix:before,
 .clearfix:after,

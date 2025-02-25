@@ -5,6 +5,8 @@
 @import "elements/dropdown.less";
 @import "elements/form.less";
 @import "elements/table.less";
+@import "elements/alert.less";
+@import "elements/icons.less";
 
 html {
   height: 100%;
@@ -1704,7 +1706,7 @@ table.less-padding td.cell[data-name="buttons"] > .btn-group {
 
   .note-toolbar {
     border-bottom: 0 !important;
-    background-color: var(--panel-default-heading-bg);
+    background-color: var(--panel-default-heading-bg) !important;
 
     > .btn-group {
       margin-bottom: 5px;
@@ -3796,6 +3798,72 @@ body > .autocomplete-suggestions.text-search-suggestions {
   }
 }
 
+.colorpicker {
+  .colorpicker-saturation {
+      width: var(--200px);
+      height: var(--200px);
+  }
+
+  .colorpicker-hue,
+  .colorpicker-alpha {
+      height: var(--200px);
+  }
+
+  .colorpicker-color {
+      width: var(--200px);
+  }
+}
+
+.colorpicker-element {
+  .input-group-addon i {
+      display: block;
+      border-radius: var(--border-radius-small);
+  }
+}
+
+.panel > .panel-body .list-container[data-role="pinned"] > .list {
+  .list-group {
+      > .list-group-item {
+          &:not(.active) {
+              background-color: var(--warning-bg);
+          }
+
+          &:first-child {
+              border-top-width: var(--1px);
+              border-top-color: var(--default-border-color);
+          }
+      }
+  }
+}
+
+.avatar-field-color {
+  margin-top: var(--3px);
+}
+
+.ace-tm {
+  font-variant-ligatures: none;
+
+  .ace_content {
+      font-variant-ligatures: none;
+  }
+}
+
+.formula-edit-container {
+  &:has(> :last-child:nth-child(2)) {
+      clear: both;
+
+      > div:first-child {
+          float: left;
+          width: calc(100% - var(--70px));
+      }
+
+      > div:last-child {
+          float: right;
+          width: var(--70px);
+      }
+  }
+}
+
 // added by Novastream AB
 body .modal-dialog .panel-default.headered,
 body .modal-dialog .panel {
@@ -4328,6 +4396,7 @@ input[type="checkbox"].filled:not(:disabled):after {
 }
 
 @import "misc/kanban.less";
+@import "misc/wysiwyg.less";
 
 @import "elements/placement.less";
 @import "elements/site.less";
@@ -4335,3 +4404,4 @@ input[type="checkbox"].filled:not(:disabled):after {
 @import "elements/buttons.less";
 @import "elements/popup-notification.less";
 @import "elements/grid.less";
+@import "elements/animation.less";
