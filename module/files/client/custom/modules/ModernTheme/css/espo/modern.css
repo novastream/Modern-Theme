@@ -19649,11 +19649,57 @@ input.global-search-input {
 .list-expanded .list-group > .list-group-item .list-row-buttons button {
   margin-top: 3px;
 }
-.list-row-buttons span.caret {
-  border-top-color: var(--caret-color);
+.list .list-row.ui-draggable .cell {
+  user-select: none;
 }
-.list-row-buttons .btn:hover span.caret {
-  border-top-color: var(--caret-color-hover);
+.list table.column-resizable > thead > tr > th > .column-resizer {
+  display: none;
+  position: absolute;
+  width: var(--4px);
+  height: var(--38px);
+  top: 0;
+  user-select: none;
+  touch-action: none;
+}
+.list table.column-resizable > thead > tr > th > .column-resizer:after {
+  content: "";
+  display: block;
+  height: var(--16px);
+  top: var(--11px);
+  width: 0;
+  position: absolute;
+}
+.list table.column-resizable > thead > tr > th > .column-resizer:not(.column-resizer-right) {
+  left: 0;
+}
+.list table.column-resizable > thead > tr > th > .column-resizer.column-resizer-right {
+  right: 0;
+}
+.list table.column-resizable > thead > tr > th > .column-resizer:hover {
+  cursor: col-resize;
+}
+.list table.column-resizable > thead > tr > th {
+  position: relative;
+}
+.list table.column-resizable > thead > tr > th > .column-resizer {
+  display: block;
+}
+.list table.column-resizable > thead > tr > th.being-resized:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: var(--4px);
+  background-color: var(--default-heading-bg-color);
+  bottom: 0;
+  left: var(--6px);
+  right: var(--6px);
+  border-radius: var(--border-radius-small);
+}
+.list table.column-resizable > thead > tr > th.being-resized:has(.column-resizer-right):after {
+  right: var(--9px);
+}
+.list table.column-resizable > thead > tr > th.being-resized:not(:has(.column-resizer-right)):after {
+  left: var(--9px);
 }
 .list > table {
   margin-bottom: 0;
@@ -19664,19 +19710,42 @@ input.global-search-input {
 .list > table td .label-md {
   line-height: 1.4;
 }
-.list > table td input[type="checkbox"],
-.list > table th input[type="checkbox"] {
+.list > table td > .label-md {
+  max-width: calc(100%);
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: top;
+  margin-top: calc(var(--1px) * -1);
+  margin-bottom: calc(var(--1px) * -1);
+}
+.list > table td input.form-checkbox-small[type="checkbox"],
+.list > table th input.form-checkbox-small[type="checkbox"] {
   margin: 0;
   position: relative;
-  top: 1px;
+  top: var(--3px);
 }
-.list > table th span.caret:not(th[data-name="r-checkbox"] span.caret) {
-  border-top-color: var(--caret-color);
-  margin-left: -1px;
+.list > table th.field-header-cell {
+  min-width: var(--10px);
 }
-.list > table th span.caret-up:not(th[data-name="r-checkbox"] span.caret) {
-  border-bottom-color: var(--caret-color);
-  margin-left: -1px;
+.list > table th span.caret {
+  border-top-color: var(--text-muted-color);
+}
+.list > table th span.caret-up {
+  border-bottom-color: var(--text-muted-color);
+}
+.filter a.remove-filter {
+  display: none;
+}
+.filter a.remove-filter .fas,
+.filter a.remove-filter .far {
+  line-height: var(--21px);
+  position: relative;
+  top: var(--1px);
+}
+.filter:hover a.remove-filter {
+  display: block;
 }
 .filter a.remove-filter {
   display: none;

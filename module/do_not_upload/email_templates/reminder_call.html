@@ -65,7 +65,7 @@
                                           </tr>
                                         </tbody>
                                       </table>
-                                      <h1 style="font-size:24px; font-weight:600; margin:0; text-align:center">EspoCRM password change request</h1>
+                                      <h1 style="font-size:24px; font-weight:600; margin:0; text-align:center">Call Reminder: {{name}}</h1>
                                       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-size: 0;height: 30px;width: 100%;min-width: 100%;line-height: 0;border-collapse: collapse;">
                                         <tbody>
                                           <tr>
@@ -90,13 +90,9 @@
                                 </tbody>
                               </table>
                               <p style="margin:0"></p>
-                              <p style="font-size:18px; text-align:center">We received a request to reset the password associated with your account. If you made this request, please click the link below to reset your password 🔒.</p>
+                              <p style="font-size:18px; text-align:center">This is a friendly reminder about a scheduled call soon 📞.</p>
                               <hr>
-                              <p>A quick reminder to keep your account secure:</p>
-                              <p>- Passwords should be at least 8 characters</p>
-                              <p>- Use a mix of letters, numbers, and symbols</p>
-                              <p>- Avoid easily guessable information, like birthdays or names</p>
-                              <p>- Update your password regularly</p>
+                              <p>Start: {{#if isAllDay}}{{dateStartDate}}{{else}}{{dateStart}}{{/if}}</p>
                               <p></p>
                               <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-size: 0;height: 50px;width: 100%;min-width: 100%;line-height: 0;border-collapse: collapse;">
                                 <tbody>
@@ -115,7 +111,7 @@
                                         <tbody>
                                           <tr>
                                             <td align="center" bgcolor="#425b76" width="auto" style="border-radius: 3px;border-collapse: collapse;">
-                                              <a href="{{link}}" target="_blank" rel="noopener noreferrer" style="border:1px solid #425b76; border-radius:3px; color:#FFFFFF; display:inline-block; font-size:14px; font-weight:400; line-height:1; padding:12px 20px; text-decoration:none; width:auto; min-width:170px; white-space:nowrap">Change password</a>
+                                              <a href="{{recordUrl}}" target="_blank" rel="noopener noreferrer" style="border:1px solid #425b76; border-radius:3px; color:#FFFFFF; display:inline-block; font-size:14px; font-weight:400; line-height:1; padding:12px 20px; text-decoration:none; width:auto; min-width:170px; white-space:nowrap">View call</a>
                                             </td>
                                           </tr>
                                         </tbody>
@@ -153,7 +149,7 @@
                                         <tbody>
                                           <tr>
                                             <td align="center" valign="middle" style="padding: 20px 0 65px;border-collapse: collapse;">
-                                              <p style="margin:0">This message was sent to {{emailAddress}} because you’re a user in the {{siteUrl}} account. You can't unsubscribe from important emails about your account like this one. Want to change other notifications? Go to your <a href="{{siteUrl}}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#00a4bd">preferences page</a>. </p>
+                                              <p style="margin:0">This message was sent to {{emailAddress}} because you’re a user in the crm.novastream.se account. You can't unsubscribe from important emails about your account like this one. Want to change other notifications? Go to your <a href="https://crm.novastream.se" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#00a4bd">preferences page</a>. </p>
                                             </td>
                                           </tr>
                                         </tbody>

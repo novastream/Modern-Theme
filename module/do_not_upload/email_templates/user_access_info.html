@@ -65,7 +65,7 @@
                                           </tr>
                                         </tbody>
                                       </table>
-                                      <h1 style="font-size:24px; font-weight:600; margin:0; text-align:center">EspoCRM password change request</h1>
+                                      <h1 style="font-size:24px; font-weight:600; margin:0; text-align:center">EspoCRM User Access Info</h1>
                                       <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-size: 0;height: 30px;width: 100%;min-width: 100%;line-height: 0;border-collapse: collapse;">
                                         <tbody>
                                           <tr>
@@ -90,36 +90,22 @@
                                 </tbody>
                               </table>
                               <p style="margin:0"></p>
-                              <p style="font-size:18px; text-align:center">We received a request to reset the password associated with your account. If you made this request, please click the link below to reset your password 🔒.</p>
+                              <p style="font-size:18px; text-align:center">Congratulations! Your EspoCRM account has been set up. Find your login credentials below and get started 🎉.</p>
                               <hr>
-                              <p>A quick reminder to keep your account secure:</p>
-                              <p>- Passwords should be at least 8 characters</p>
-                              <p>- Use a mix of letters, numbers, and symbols</p>
-                              <p>- Avoid easily guessable information, like birthdays or names</p>
-                              <p>- Update your password regularly</p>
+                              <p></p>
+                              <p style="background-color:#F5F8FA; border:1px solid #E2EAEF; padding:20px">
+								Username: <strong>{{userName}}</strong>
+								{{#if password}}
+								<br>Password: <strong>{{password}}</strong>
+								{{/if}}
+							  </p>
+                              <p>If you did not attempt to log in or are unsure about this email, please contact our support team immediately.</p>
                               <p></p>
                               <table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-size: 0;height: 50px;width: 100%;min-width: 100%;line-height: 0;border-collapse: collapse;">
                                 <tbody>
                                   <tr>
                                     <td height="50" style="border-collapse: collapse;">
                                       <span style="color:transparent; background:none; text-overflow:ellipsis; opacity:0; width:100%; min-width:100%; height:1; padding:0; font-size:0">&nbsp;</span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%;min-width: 100%;border-collapse: collapse;">
-                                <tbody>
-                                  <tr>
-                                    <td align="center" style="border-collapse: collapse;">
-                                      <table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-                                        <tbody>
-                                          <tr>
-                                            <td align="center" bgcolor="#425b76" width="auto" style="border-radius: 3px;border-collapse: collapse;">
-                                              <a href="{{link}}" target="_blank" rel="noopener noreferrer" style="border:1px solid #425b76; border-radius:3px; color:#FFFFFF; display:inline-block; font-size:14px; font-weight:400; line-height:1; padding:12px 20px; text-decoration:none; width:auto; min-width:170px; white-space:nowrap">Change password</a>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
                                     </td>
                                   </tr>
                                 </tbody>

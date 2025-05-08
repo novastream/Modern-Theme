@@ -105,12 +105,12 @@ table tr td {
   &.highlighted {
     @highlighted-bg: @state-info-bg;
     .button-variant-espo(
-        var(--btn-info-color);
-        var(--btn-info-bg);
-        var(--btn-info-border);
-        var(--btn-info-hover-bg);
-        var(--btn-info-active-bg);
-        var(--btn-info-hover-border);
+        var(--btn-info-color),
+        var(--btn-info-bg),
+        var(--btn-info-border),
+        var(--btn-info-hover-bg),
+        var(--btn-info-active-bg),
+        var(--btn-info-hover-border),
         var(--btn-info-active-border)
     );
     border-radius: var(--border-radius);
@@ -128,12 +128,12 @@ table tr td {
   &.today {
     @today-bg: var(--state-warning-bg);
       .button-variant-espo(
-          var(--state-warning-text);
-          var(--state-warning-bg);
-          var(--state-warning-bg-5);
-          var(--state-warning-bg-5);
-          var(--state-warning-bg-5);
-          var(--state-warning-bg-5);
+          var(--state-warning-text),
+          var(--state-warning-bg),
+          var(--state-warning-bg-5),
+          var(--state-warning-bg-5),
+          var(--state-warning-bg-5),
+          var(--state-warning-bg-5),
           var(--state-warning-bg-5)
       );
 
@@ -150,12 +150,12 @@ table tr td {
   &.range {
     @range-bg: @gray-lighter;
     .button-variant-espo(
-      #000;
-      @range-bg;
-      var(--gray-lighter-5);
-      var(--gray-lighter-10);
-      var(--gray-lighter-17);
-      var(--gray-lighter-12);
+      #000,
+      @range-bg,
+      var(--gray-lighter-5),
+      var(--gray-lighter-10),
+      var(--gray-lighter-17),
+      var(--gray-lighter-12),
       var(--gray-lighter-25)
     );
     border-radius: 0;
@@ -174,12 +174,12 @@ table tr td {
     @range-highlighted-bg: var(--btn-success-bg);
 
     .button-variant-espo(
-        var(--btn-success-color);
-        var(--btn-success-bg);
-        var(--btn-success-border);
-        var(--btn-success-hover-bg);
-        var(--btn-success-active-bg);
-        var(--btn-success-hover-border);
+        var(--btn-success-color),
+        var(--btn-success-bg),
+        var(--btn-success-border),
+        var(--btn-success-hover-bg),
+        var(--btn-success-active-bg),
+        var(--btn-success-hover-border),
         var(--btn-success-active-border)
     );
 
@@ -196,12 +196,12 @@ table tr td {
   &.range.today {
     @range-today-bg: var(--gray-lighter-orange-mix);
     .button-variant-espo(
-      #000;
-      @range-today-bg;
-      var(--gray-lighter-orange-mix-5);
-      var(--gray-lighter-orange-mix-10);
-      var(--gray-lighter-orange-mix-12);
-      var(--gray-lighter-orange-mix-17);
+      #000,
+      @range-today-bg,
+      var(--gray-lighter-orange-mix-5),
+      var(--gray-lighter-orange-mix-10),
+      var(--gray-lighter-orange-mix-12),
+      var(--gray-lighter-orange-mix-17),
       var(--gray-lighter-orange-mix-25)
     );
 
@@ -214,12 +214,12 @@ table tr td {
   &.selected,
   &.selected.highlighted {
     .button-variant-espo(
-      #fff;
-      @gray-light;
-      var(--gray-light-5);
-      var(--gray-light-10);
-      var(--gray-light-17);
-      var(--gray-light-12);
+      #fff,
+      @gray-light,
+      var(--gray-light-5),
+      var(--gray-light-10),
+      var(--gray-light-17),
+      var(--gray-light-12),
       var(--gray-light-25)
     );
     text-shadow: 0 var(--minus-1px) 0 rgba(0,0,0,.25);
@@ -227,12 +227,12 @@ table tr td {
   &.active,
   &.active.highlighted {
       .button-variant-espo(
-          var(--btn-primary-color);
-          var(--btn-primary-bg);
-          var(--btn-primary-border);
-          var(--btn-primary-hover-bg);
-          var(--btn-primary-active-bg);
-          var(--btn-primary-hover-border);
+          var(--btn-primary-color),
+          var(--btn-primary-bg),
+          var(--btn-primary-border),
+          var(--btn-primary-hover-bg),
+          var(--btn-primary-active-bg),
+          var(--btn-primary-hover-border),
           var(--btn-primary-active-border)
       );
     text-shadow: 0 var(--minus-1px) 0 rgba(0,0,0,.25);
@@ -261,12 +261,12 @@ table tr td {
     &.active.disabled,
     &.active.disabled:hover {
         .button-variant-espo(
-            var(--btn-primary-color);
-            var(--btn-primary-bg);
-            var(--btn-primary-border);
-            var(--btn-primary-hover-bg);
-            var(--btn-primary-active-bg);
-            var(--btn-primary-hover-border);
+            var(--btn-primary-color),
+            var(--btn-primary-bg),
+            var(--btn-primary-border),
+            var(--btn-primary-hover-bg),
+            var(--btn-primary-active-bg),
+            var(--btn-primary-hover-border),
             var(--btn-primary-active-border)
         );
       text-shadow: 0 var(--minus-1px) 0 rgba(0,0,0,.25);
